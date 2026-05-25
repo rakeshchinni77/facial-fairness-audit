@@ -1,0 +1,20 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: facial-fairness-audit
+    environment:
+      PYTHONUNBUFFERED: "1"
+      LOG_LEVEL: "INFO"
+    command: ["python", "main.py"]
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          'python -c "import torch, cv2, pandas, fairlearn; print(''healthy'')"',
+        ]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s

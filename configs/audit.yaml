@@ -1,0 +1,10 @@
+# Audit configuration placeholder.
+# TODO: define thresholding and subgroup evaluation details later.
+
+audit:
+  threshold_strategy: validation_roc
+  subgroup_axes:
+    - gender
+    - age
+    - skin_tone
+  output_directory: results

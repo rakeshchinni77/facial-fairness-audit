@@ -1,0 +1,16 @@
+# Project-wide configuration placeholder.
+# TODO: populate these values during the implementation phases.
+
+project:
+  name: facial-fairness-audit
+  version: 0.1.0
+
+paths:
+  data_root: data
+  artifacts_root: artifacts
+  results_root: results
+  submission_root: submission
+
+runtime:
+  log_level: INFO
+  seed: 42

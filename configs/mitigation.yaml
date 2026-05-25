@@ -1,0 +1,7 @@
+# Mitigation configuration placeholder.
+# TODO: choose the mitigation strategy after the initial audit.
+
+mitigation:
+  strategy: TBD
+  retrain: true
+  preserve_audit_set: true

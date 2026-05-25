@@ -1,0 +1,8 @@
+# Model configuration placeholder.
+# TODO: select the final backbone and embedding settings later.
+
+model:
+  architecture: TBD
+  pretrained: true
+  embedding_dim: 256
+  loss: triplet
