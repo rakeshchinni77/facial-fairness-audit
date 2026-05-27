@@ -1,0 +1,19 @@
+{
+  "optimal_threshold": 0.36870571970939636,
+  "roc_auc": 0.5349897097897156,
+  "estimated_far": 0.33065236818588023,
+  "estimated_frr": 0.6076854334226989,
+  "validation_pairs": 4476,
+  "validation_statistics": {
+    "positive_examples": 2238,
+    "negative_examples": 2238,
+    "true_positive": 878,
+    "false_positive": 740,
+    "true_negative": 1498,
+    "false_negative": 1360
+  },
+  "det_summary": {
+    "far_points": 4468,
+    "frr_points": 4468
+  }
+}
