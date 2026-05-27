@@ -14,3 +14,14 @@ paths:
 runtime:
   log_level: INFO
   seed: 42
+
+preprocessing:
+  image_size: 224
+  normalization:
+    mean: [0.485, 0.456, 0.406]
+    std: [0.229, 0.224, 0.225]
+
+augmentation:
+  horizontal_flip_probability: 0.5
+  brightness_factor: 0.1
+  rotation_degrees: 5.0

@@ -6,3 +6,7 @@ training:
   epochs: 1
   learning_rate: 0.0001
   optimizer: adam
+
+preprocessing:
+  image_size: 224
+  audit_uses_augmentation: false
