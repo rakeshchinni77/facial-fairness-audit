@@ -1,0 +1,38 @@
+{
+  "cross_group_summary": {
+    "worst_cross_group": "Female_20-39_Dark__vs__Male_40-59_Dark",
+    "worst_cross_group_far": 1.0,
+    "worst_cross_group_frr": 0.0
+  },
+  "fairness_risk_level": "HIGH",
+  "largest_far_gap": {
+    "best_group_far": 0.0,
+    "gap": 0.0,
+    "worst_group_far": 0.0
+  },
+  "largest_frr_gap": {
+    "best_group_frr": 0.3125,
+    "gap": 0.405147,
+    "worst_group_frr": 0.717647
+  },
+  "low_support_warnings": [],
+  "most_affected_demographics": [
+    "Male_0-19_Light",
+    "Female_60+_Medium"
+  ],
+  "overall_metrics": {
+    "far": 0.324565,
+    "frr": 0.628622,
+    "total_pairs": 4486
+  },
+  "worst_far_group": {
+    "far": 0.0,
+    "group": "Male_60+_Dark",
+    "support": 12
+  },
+  "worst_frr_group": {
+    "frr": 0.717647,
+    "group": "Male_0-19_Light",
+    "support": 85
+  }
+}
