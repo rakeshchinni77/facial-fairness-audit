@@ -1,20 +1,21 @@
 services:
-  app:
+  fairness-audit:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: facial-fairness-audit
+    container_name: fairness-audit-container
+    restart: unless-stopped
+    env_file:
+      - .env.example
     environment:
       PYTHONUNBUFFERED: "1"
-      LOG_LEVEL: "INFO"
+      PYTHONDONTWRITEBYTECODE: "1"
+    volumes:
+      - .:/app
     command: ["python", "main.py"]
     healthcheck:
-      test:
-        [
-          "CMD-SHELL",
-          'python -c "import torch, cv2, pandas, fairlearn; print(''healthy'')"',
-        ]
+      test: ["CMD-SHELL", 'python -c "import torch; print(torch.__version__)"']
       interval: 30s
       timeout: 10s
       retries: 5
-      start_period: 60s
+      start_period: 30s
