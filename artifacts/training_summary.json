@@ -1,0 +1,42 @@
+{
+  "best_validation_loss": 0.326867301017046,
+  "epochs_completed": 2,
+  "model_path": "artifacts\\model.pth",
+  "best_model_path": "artifacts\\best_model.pth",
+  "metrics": [
+    {
+      "epoch": 1,
+      "train_loss": 0.28119823429733515,
+      "validation_loss": 0.326867301017046,
+      "mean_anchor_positive_distance": 1.1511106491088867,
+      "mean_anchor_negative_distance": 1.1636310815811157,
+      "mean_positive_negative_distance": 1.1749858856201172,
+      "mean_positive_similarity": 0.3346370458602905,
+      "mean_negative_similarity": 0.3198791742324829,
+      "learning_rate": 0.0001,
+      "duration_seconds": 73.35419464111328,
+      "metadata": {
+        "batch_count": 16,
+        "train_batches": 16,
+        "validation_batches": 8
+      }
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.01619077380746603,
+      "validation_loss": 0.328679833561182,
+      "mean_anchor_positive_distance": 0.9464006423950195,
+      "mean_anchor_negative_distance": 1.3045953512191772,
+      "mean_positive_negative_distance": 1.1985348463058472,
+      "mean_positive_similarity": 0.5451328754425049,
+      "mean_negative_similarity": 0.14802463352680206,
+      "learning_rate": 0.0001,
+      "duration_seconds": 53.074321031570435,
+      "metadata": {
+        "batch_count": 16,
+        "train_batches": 16,
+        "validation_batches": 8
+      }
+    }
+  ]
+}
