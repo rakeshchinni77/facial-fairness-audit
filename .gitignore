@@ -1,23 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
 .venv/
 venv/
 env/
-__pycache__/
-*.py[cod]
-.pytest_cache/
+ENV/
+
+# Jupyter
 .ipynb_checkpoints/
+
+# Logs
+*.log
+logs/
+
+# OS files
 .DS_Store
 Thumbs.db
 desktop.ini
-*.log
-logs/
+ehthumbs.db
+
+# Dataset storage
 data/raw/
-data/processed/
 data/interim/
 data/audit/
-artifacts/*.pt
-artifacts/*.pth
-artifacts/*.onnx
-artifacts/*.h5
+data/external/
+datasets/
+downloads/
+
+# Temporary ML artifacts
 artifacts/checkpoints/
 artifacts/embeddings/
-artifacts/plots/
+artifacts/tmp/
+artifacts/intermediate/
+artifacts/cache/
+
+# Tracked evaluator outputs and final deliverables are intentionally kept under version control:
+# results/
+# submission/
+# configs/
+# README.md
+# artifacts/*.pth
+# artifacts/plots/
+
+# IDE settings
+.vscode/
+.idea/
+*.suo
+*.user
+*.swp
+*.swo

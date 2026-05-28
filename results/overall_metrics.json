@@ -1,0 +1,21 @@
+{
+  "initial_model": {
+    "accuracy": 0.5234061524743647,
+    "far": 0.32456531431119034,
+    "frr": 0.6286223807400803,
+    "threshold": 0.36870571970939636
+  },
+  "mitigated_model": {
+    "accuracy": 0.5060187249219794,
+    "far": 0.5193936691930451,
+    "frr": 0.468568880962996,
+    "threshold": 0.36870571970939636
+  },
+  "tradeoff_analysis": {
+    "accuracy_change": -0.017387427552385315,
+    "fairness_improved": false,
+    "far_change": 0.19482835488185474,
+    "frr_change": -0.16005349977708427,
+    "summary": "The mitigation strategy reduced FRR but increased FAR, indicating a deployment trade-off between accessibility and security that should be resolved before operational use."
+  }
+}

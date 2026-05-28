@@ -1,0 +1,2568 @@
+{
+  "average_disparity_reduction": 0.10474898012141054,
+  "best_improved_subgroup": "Female_40-59_Light",
+  "cross_group_deltas": {
+    "Female_0-19_Dark__vs__Female_0-19_Light": {
+      "delta_far": 1.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 1.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 1.0
+    },
+    "Female_0-19_Dark__vs__Female_0-19_Medium": {
+      "delta_far": 0.2857142857142857,
+      "delta_frr": 0.0,
+      "initial_far": 0.2857142857142857,
+      "initial_frr": 0.0,
+      "initial_gap": 0.2857142857142857,
+      "mitigated_far": 0.5714285714285714,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5714285714285714
+    },
+    "Female_0-19_Dark__vs__Female_20-39_Dark": {
+      "delta_far": 0.16666666666666669,
+      "delta_frr": 0.0,
+      "initial_far": 0.3333333333333333,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3333333333333333,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Female_0-19_Dark__vs__Female_20-39_Light": {
+      "delta_far": -0.33333333333333337,
+      "delta_frr": 0.0,
+      "initial_far": 0.5,
+      "initial_frr": 0.0,
+      "initial_gap": 0.5,
+      "mitigated_far": 0.16666666666666666,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.16666666666666666
+    },
+    "Female_0-19_Dark__vs__Female_20-39_Medium": {
+      "delta_far": 0.26666666666666666,
+      "delta_frr": 0.0,
+      "initial_far": 0.3333333333333333,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3333333333333333,
+      "mitigated_far": 0.6,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.6
+    },
+    "Female_0-19_Dark__vs__Female_40-59_Light": {
+      "delta_far": 0.5,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Female_0-19_Dark__vs__Female_40-59_Medium": {
+      "delta_far": 0.25,
+      "delta_frr": 0.0,
+      "initial_far": 0.25,
+      "initial_frr": 0.0,
+      "initial_gap": 0.25,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Female_0-19_Dark__vs__Female_60+_Medium": {
+      "delta_far": 0.25,
+      "delta_frr": 0.0,
+      "initial_far": 0.75,
+      "initial_frr": 0.0,
+      "initial_gap": 0.75,
+      "mitigated_far": 1.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 1.0
+    },
+    "Female_0-19_Dark__vs__Male_0-19_Dark": {
+      "delta_far": 0.5714285714285714,
+      "delta_frr": 0.0,
+      "initial_far": 0.2857142857142857,
+      "initial_frr": 0.0,
+      "initial_gap": 0.2857142857142857,
+      "mitigated_far": 0.8571428571428571,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.8571428571428571
+    },
+    "Female_0-19_Dark__vs__Male_0-19_Light": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Female_0-19_Dark__vs__Male_0-19_Medium": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.6666666666666666,
+      "initial_frr": 0.0,
+      "initial_gap": 0.6666666666666666,
+      "mitigated_far": 0.6666666666666666,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.6666666666666666
+    },
+    "Female_0-19_Dark__vs__Male_20-39_Dark": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.6666666666666666,
+      "initial_frr": 0.0,
+      "initial_gap": 0.6666666666666666,
+      "mitigated_far": 0.6666666666666666,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.6666666666666666
+    },
+    "Female_0-19_Dark__vs__Male_20-39_Light": {
+      "delta_far": 0.1111111111111111,
+      "delta_frr": 0.0,
+      "initial_far": 0.3333333333333333,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3333333333333333,
+      "mitigated_far": 0.4444444444444444,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.4444444444444444
+    },
+    "Female_0-19_Dark__vs__Male_20-39_Medium": {
+      "delta_far": 0.375,
+      "delta_frr": 0.0,
+      "initial_far": 0.375,
+      "initial_frr": 0.0,
+      "initial_gap": 0.375,
+      "mitigated_far": 0.75,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.75
+    },
+    "Female_0-19_Dark__vs__Male_40-59_Light": {
+      "delta_far": -0.5,
+      "delta_frr": 0.0,
+      "initial_far": 1.0,
+      "initial_frr": 0.0,
+      "initial_gap": 1.0,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Female_0-19_Dark__vs__Male_40-59_Medium": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.75,
+      "initial_frr": 0.0,
+      "initial_gap": 0.75,
+      "mitigated_far": 0.75,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.75
+    },
+    "Female_0-19_Dark__vs__Male_60+_Dark": {
+      "delta_far": 1.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 1.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 1.0
+    },
+    "Female_0-19_Dark__vs__Male_60+_Light": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.3333333333333333,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3333333333333333,
+      "mitigated_far": 0.3333333333333333,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.3333333333333333
+    },
+    "Female_0-19_Dark__vs__Male_60+_Medium": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.3333333333333333,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3333333333333333,
+      "mitigated_far": 0.3333333333333333,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.3333333333333333
+    },
+    "Female_0-19_Light__vs__Female_0-19_Medium": {
+      "delta_far": 0.125,
+      "delta_frr": 0.0,
+      "initial_far": 0.3125,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3125,
+      "mitigated_far": 0.4375,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.4375
+    },
+    "Female_0-19_Light__vs__Female_20-39_Dark": {
+      "delta_far": 0.5,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Female_0-19_Light__vs__Female_20-39_Light": {
+      "delta_far": 0.30000000000000004,
+      "delta_frr": 0.0,
+      "initial_far": 0.35,
+      "initial_frr": 0.0,
+      "initial_gap": 0.35,
+      "mitigated_far": 0.65,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.65
+    },
+    "Female_0-19_Light__vs__Female_20-39_Medium": {
+      "delta_far": 0.10526315789473684,
+      "delta_frr": 0.0,
+      "initial_far": 0.21052631578947367,
+      "initial_frr": 0.0,
+      "initial_gap": 0.21052631578947367,
+      "mitigated_far": 0.3157894736842105,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.3157894736842105
+    },
+    "Female_0-19_Light__vs__Female_40-59_Dark": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Female_0-19_Light__vs__Female_40-59_Light": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.6666666666666666,
+      "initial_frr": 0.0,
+      "initial_gap": 0.6666666666666666,
+      "mitigated_far": 0.6666666666666666,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.6666666666666666
+    },
+    "Female_0-19_Light__vs__Female_40-59_Medium": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Female_0-19_Light__vs__Female_60+_Light": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Female_0-19_Light__vs__Female_60+_Medium": {
+      "delta_far": 0.5,
+      "delta_frr": 0.0,
+      "initial_far": 0.25,
+      "initial_frr": 0.0,
+      "initial_gap": 0.25,
+      "mitigated_far": 0.75,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.75
+    },
+    "Female_0-19_Light__vs__Male_0-19_Dark": {
+      "delta_far": 0.2,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 0.2,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.2
+    },
+    "Female_0-19_Light__vs__Male_0-19_Light": {
+      "delta_far": -0.3333333333333333,
+      "delta_frr": 0.0,
+      "initial_far": 0.3333333333333333,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3333333333333333,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Female_0-19_Light__vs__Male_0-19_Medium": {
+      "delta_far": 0.25,
+      "delta_frr": 0.0,
+      "initial_far": 0.25,
+      "initial_frr": 0.0,
+      "initial_gap": 0.25,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Female_0-19_Light__vs__Male_20-39_Dark": {
+      "delta_far": 0.5,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Female_0-19_Light__vs__Male_20-39_Light": {
+      "delta_far": 0.15384615384615385,
+      "delta_frr": 0.0,
+      "initial_far": 0.3076923076923077,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3076923076923077,
+      "mitigated_far": 0.46153846153846156,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.46153846153846156
+    },
+    "Female_0-19_Light__vs__Male_20-39_Medium": {
+      "delta_far": 0.18181818181818182,
+      "delta_frr": 0.0,
+      "initial_far": 0.4090909090909091,
+      "initial_frr": 0.0,
+      "initial_gap": 0.4090909090909091,
+      "mitigated_far": 0.5909090909090909,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5909090909090909
+    },
+    "Female_0-19_Light__vs__Male_40-59_Dark": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Female_0-19_Light__vs__Male_40-59_Light": {
+      "delta_far": 0.42857142857142855,
+      "delta_frr": 0.0,
+      "initial_far": 0.14285714285714285,
+      "initial_frr": 0.0,
+      "initial_gap": 0.14285714285714285,
+      "mitigated_far": 0.5714285714285714,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5714285714285714
+    },
+    "Female_0-19_Light__vs__Male_40-59_Medium": {
+      "delta_far": 0.5,
+      "delta_frr": 0.0,
+      "initial_far": 0.16666666666666666,
+      "initial_frr": 0.0,
+      "initial_gap": 0.16666666666666666,
+      "mitigated_far": 0.6666666666666666,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.6666666666666666
+    },
+    "Female_0-19_Light__vs__Male_60+_Dark": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Female_0-19_Light__vs__Male_60+_Light": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.3333333333333333,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3333333333333333,
+      "mitigated_far": 0.3333333333333333,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.3333333333333333
+    },
+    "Female_0-19_Light__vs__Male_60+_Medium": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.6666666666666666,
+      "initial_frr": 0.0,
+      "initial_gap": 0.6666666666666666,
+      "mitigated_far": 0.6666666666666666,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.6666666666666666
+    },
+    "Female_0-19_Medium__vs__Female_20-39_Dark": {
+      "delta_far": 0.28571428571428575,
+      "delta_frr": 0.0,
+      "initial_far": 0.42857142857142855,
+      "initial_frr": 0.0,
+      "initial_gap": 0.42857142857142855,
+      "mitigated_far": 0.7142857142857143,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.7142857142857143
+    },
+    "Female_0-19_Medium__vs__Female_20-39_Light": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.37037037037037035,
+      "initial_frr": 0.0,
+      "initial_gap": 0.37037037037037035,
+      "mitigated_far": 0.37037037037037035,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.37037037037037035
+    },
+    "Female_0-19_Medium__vs__Female_20-39_Medium": {
+      "delta_far": 0.28947368421052627,
+      "delta_frr": 0.0,
+      "initial_far": 0.34210526315789475,
+      "initial_frr": 0.0,
+      "initial_gap": 0.34210526315789475,
+      "mitigated_far": 0.631578947368421,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.631578947368421
+    },
+    "Female_0-19_Medium__vs__Female_40-59_Dark": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.5,
+      "initial_frr": 0.0,
+      "initial_gap": 0.5,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Female_0-19_Medium__vs__Female_40-59_Light": {
+      "delta_far": 0.25,
+      "delta_frr": 0.0,
+      "initial_far": 0.25,
+      "initial_frr": 0.0,
+      "initial_gap": 0.25,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Female_0-19_Medium__vs__Female_40-59_Medium": {
+      "delta_far": 0.22222222222222227,
+      "delta_frr": 0.0,
+      "initial_far": 0.3333333333333333,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3333333333333333,
+      "mitigated_far": 0.5555555555555556,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5555555555555556
+    },
+    "Female_0-19_Medium__vs__Female_60+_Dark": {
+      "delta_far": -0.3333333333333333,
+      "delta_frr": 0.0,
+      "initial_far": 0.6666666666666666,
+      "initial_frr": 0.0,
+      "initial_gap": 0.6666666666666666,
+      "mitigated_far": 0.3333333333333333,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.3333333333333333
+    },
+    "Female_0-19_Medium__vs__Female_60+_Light": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.5,
+      "initial_frr": 0.0,
+      "initial_gap": 0.5,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Female_0-19_Medium__vs__Female_60+_Medium": {
+      "delta_far": 0.3333333333333333,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 0.3333333333333333,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.3333333333333333
+    },
+    "Female_0-19_Medium__vs__Male_0-19_Dark": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.4,
+      "initial_frr": 0.0,
+      "initial_gap": 0.4,
+      "mitigated_far": 0.4,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.4
+    },
+    "Female_0-19_Medium__vs__Male_0-19_Light": {
+      "delta_far": 0.2222222222222222,
+      "delta_frr": 0.0,
+      "initial_far": 0.2222222222222222,
+      "initial_frr": 0.0,
+      "initial_gap": 0.2222222222222222,
+      "mitigated_far": 0.4444444444444444,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.4444444444444444
+    },
+    "Female_0-19_Medium__vs__Male_0-19_Medium": {
+      "delta_far": 0.25,
+      "delta_frr": 0.0,
+      "initial_far": 0.375,
+      "initial_frr": 0.0,
+      "initial_gap": 0.375,
+      "mitigated_far": 0.625,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.625
+    },
+    "Female_0-19_Medium__vs__Male_20-39_Dark": {
+      "delta_far": 0.21428571428571427,
+      "delta_frr": 0.0,
+      "initial_far": 0.21428571428571427,
+      "initial_frr": 0.0,
+      "initial_gap": 0.21428571428571427,
+      "mitigated_far": 0.42857142857142855,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.42857142857142855
+    },
+    "Female_0-19_Medium__vs__Male_20-39_Light": {
+      "delta_far": 0.3333333333333333,
+      "delta_frr": 0.0,
+      "initial_far": 0.25925925925925924,
+      "initial_frr": 0.0,
+      "initial_gap": 0.25925925925925924,
+      "mitigated_far": 0.5925925925925926,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5925925925925926
+    },
+    "Female_0-19_Medium__vs__Male_20-39_Medium": {
+      "delta_far": 0.15000000000000002,
+      "delta_frr": 0.0,
+      "initial_far": 0.3,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3,
+      "mitigated_far": 0.45,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.45
+    },
+    "Female_0-19_Medium__vs__Male_40-59_Dark": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.6666666666666666,
+      "initial_frr": 0.0,
+      "initial_gap": 0.6666666666666666,
+      "mitigated_far": 0.6666666666666666,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.6666666666666666
+    },
+    "Female_0-19_Medium__vs__Male_40-59_Light": {
+      "delta_far": 0.18181818181818182,
+      "delta_frr": 0.0,
+      "initial_far": 0.45454545454545453,
+      "initial_frr": 0.0,
+      "initial_gap": 0.45454545454545453,
+      "mitigated_far": 0.6363636363636364,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.6363636363636364
+    },
+    "Female_0-19_Medium__vs__Male_40-59_Medium": {
+      "delta_far": 0.41176470588235287,
+      "delta_frr": 0.0,
+      "initial_far": 0.35294117647058826,
+      "initial_frr": 0.0,
+      "initial_gap": 0.35294117647058826,
+      "mitigated_far": 0.7647058823529411,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.7647058823529411
+    },
+    "Female_0-19_Medium__vs__Male_60+_Dark": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Female_0-19_Medium__vs__Male_60+_Light": {
+      "delta_far": 0.25,
+      "delta_frr": 0.0,
+      "initial_far": 0.125,
+      "initial_frr": 0.0,
+      "initial_gap": 0.125,
+      "mitigated_far": 0.375,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.375
+    },
+    "Female_0-19_Medium__vs__Male_60+_Medium": {
+      "delta_far": 0.08333333333333331,
+      "delta_frr": 0.0,
+      "initial_far": 0.4166666666666667,
+      "initial_frr": 0.0,
+      "initial_gap": 0.4166666666666667,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Female_20-39_Dark__vs__Female_20-39_Light": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.3333333333333333,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3333333333333333,
+      "mitigated_far": 0.3333333333333333,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.3333333333333333
+    },
+    "Female_20-39_Dark__vs__Female_20-39_Medium": {
+      "delta_far": 0.1428571428571429,
+      "delta_frr": 0.0,
+      "initial_far": 0.38095238095238093,
+      "initial_frr": 0.0,
+      "initial_gap": 0.38095238095238093,
+      "mitigated_far": 0.5238095238095238,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5238095238095238
+    },
+    "Female_20-39_Dark__vs__Female_40-59_Dark": {
+      "delta_far": 0.5,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Female_20-39_Dark__vs__Female_40-59_Light": {
+      "delta_far": 0.33333333333333337,
+      "delta_frr": 0.0,
+      "initial_far": 0.6666666666666666,
+      "initial_frr": 0.0,
+      "initial_gap": 0.6666666666666666,
+      "mitigated_far": 1.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 1.0
+    },
+    "Female_20-39_Dark__vs__Female_40-59_Medium": {
+      "delta_far": -0.39999999999999997,
+      "delta_frr": 0.0,
+      "initial_far": 0.6,
+      "initial_frr": 0.0,
+      "initial_gap": 0.6,
+      "mitigated_far": 0.2,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.2
+    },
+    "Female_20-39_Dark__vs__Female_60+_Light": {
+      "delta_far": 0.5,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Female_20-39_Dark__vs__Female_60+_Medium": {
+      "delta_far": 0.5,
+      "delta_frr": 0.0,
+      "initial_far": 0.25,
+      "initial_frr": 0.0,
+      "initial_gap": 0.25,
+      "mitigated_far": 0.75,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.75
+    },
+    "Female_20-39_Dark__vs__Male_0-19_Dark": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.42857142857142855,
+      "initial_frr": 0.0,
+      "initial_gap": 0.42857142857142855,
+      "mitigated_far": 0.42857142857142855,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.42857142857142855
+    },
+    "Female_20-39_Dark__vs__Male_0-19_Light": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.5714285714285714,
+      "initial_frr": 0.0,
+      "initial_gap": 0.5714285714285714,
+      "mitigated_far": 0.5714285714285714,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5714285714285714
+    },
+    "Female_20-39_Dark__vs__Male_0-19_Medium": {
+      "delta_far": 0.07692307692307693,
+      "delta_frr": 0.0,
+      "initial_far": 0.38461538461538464,
+      "initial_frr": 0.0,
+      "initial_gap": 0.38461538461538464,
+      "mitigated_far": 0.46153846153846156,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.46153846153846156
+    },
+    "Female_20-39_Dark__vs__Male_20-39_Dark": {
+      "delta_far": -0.5,
+      "delta_frr": 0.0,
+      "initial_far": 1.0,
+      "initial_frr": 0.0,
+      "initial_gap": 1.0,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Female_20-39_Dark__vs__Male_20-39_Light": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.45454545454545453,
+      "initial_frr": 0.0,
+      "initial_gap": 0.45454545454545453,
+      "mitigated_far": 0.45454545454545453,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.45454545454545453
+    },
+    "Female_20-39_Dark__vs__Male_20-39_Medium": {
+      "delta_far": 0.045454545454545414,
+      "delta_frr": 0.0,
+      "initial_far": 0.4090909090909091,
+      "initial_frr": 0.0,
+      "initial_gap": 0.4090909090909091,
+      "mitigated_far": 0.45454545454545453,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.45454545454545453
+    },
+    "Female_20-39_Dark__vs__Male_40-59_Dark": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 1.0,
+      "initial_frr": 0.0,
+      "initial_gap": 1.0,
+      "mitigated_far": 1.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 1.0
+    },
+    "Female_20-39_Dark__vs__Male_40-59_Light": {
+      "delta_far": -0.6666666666666666,
+      "delta_frr": 0.0,
+      "initial_far": 0.6666666666666666,
+      "initial_frr": 0.0,
+      "initial_gap": 0.6666666666666666,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Female_20-39_Dark__vs__Male_40-59_Medium": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.5,
+      "initial_frr": 0.0,
+      "initial_gap": 0.5,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Female_20-39_Dark__vs__Male_60+_Light": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Female_20-39_Dark__vs__Male_60+_Medium": {
+      "delta_far": -0.11111111111111116,
+      "delta_frr": 0.0,
+      "initial_far": 0.5555555555555556,
+      "initial_frr": 0.0,
+      "initial_gap": 0.5555555555555556,
+      "mitigated_far": 0.4444444444444444,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.4444444444444444
+    },
+    "Female_20-39_Light__vs__Female_20-39_Medium": {
+      "delta_far": 0.33999999999999997,
+      "delta_frr": 0.0,
+      "initial_far": 0.26,
+      "initial_frr": 0.0,
+      "initial_gap": 0.26,
+      "mitigated_far": 0.6,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.6
+    },
+    "Female_20-39_Light__vs__Female_40-59_Dark": {
+      "delta_far": 0.5,
+      "delta_frr": 0.0,
+      "initial_far": 0.25,
+      "initial_frr": 0.0,
+      "initial_gap": 0.25,
+      "mitigated_far": 0.75,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.75
+    },
+    "Female_20-39_Light__vs__Female_40-59_Light": {
+      "delta_far": 0.5,
+      "delta_frr": 0.0,
+      "initial_far": 0.3333333333333333,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3333333333333333,
+      "mitigated_far": 0.8333333333333334,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.8333333333333334
+    },
+    "Female_20-39_Light__vs__Female_40-59_Medium": {
+      "delta_far": 0.1875,
+      "delta_frr": 0.0,
+      "initial_far": 0.375,
+      "initial_frr": 0.0,
+      "initial_gap": 0.375,
+      "mitigated_far": 0.5625,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5625
+    },
+    "Female_20-39_Light__vs__Female_60+_Dark": {
+      "delta_far": 0.19999999999999996,
+      "delta_frr": 0.0,
+      "initial_far": 0.4,
+      "initial_frr": 0.0,
+      "initial_gap": 0.4,
+      "mitigated_far": 0.6,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.6
+    },
+    "Female_20-39_Light__vs__Female_60+_Light": {
+      "delta_far": 0.6000000000000001,
+      "delta_frr": 0.0,
+      "initial_far": 0.2,
+      "initial_frr": 0.0,
+      "initial_gap": 0.2,
+      "mitigated_far": 0.8,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.8
+    },
+    "Female_20-39_Light__vs__Female_60+_Medium": {
+      "delta_far": 0.3076923076923077,
+      "delta_frr": 0.0,
+      "initial_far": 0.15384615384615385,
+      "initial_frr": 0.0,
+      "initial_gap": 0.15384615384615385,
+      "mitigated_far": 0.46153846153846156,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.46153846153846156
+    },
+    "Female_20-39_Light__vs__Male_0-19_Dark": {
+      "delta_far": 0.16666666666666663,
+      "delta_frr": 0.0,
+      "initial_far": 0.5,
+      "initial_frr": 0.0,
+      "initial_gap": 0.5,
+      "mitigated_far": 0.6666666666666666,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.6666666666666666
+    },
+    "Female_20-39_Light__vs__Male_0-19_Light": {
+      "delta_far": 0.18181818181818182,
+      "delta_frr": 0.0,
+      "initial_far": 0.2727272727272727,
+      "initial_frr": 0.0,
+      "initial_gap": 0.2727272727272727,
+      "mitigated_far": 0.45454545454545453,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.45454545454545453
+    },
+    "Female_20-39_Light__vs__Male_0-19_Medium": {
+      "delta_far": 0.1935483870967742,
+      "delta_frr": 0.0,
+      "initial_far": 0.25806451612903225,
+      "initial_frr": 0.0,
+      "initial_gap": 0.25806451612903225,
+      "mitigated_far": 0.45161290322580644,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.45161290322580644
+    },
+    "Female_20-39_Light__vs__Male_20-39_Dark": {
+      "delta_far": 0.16666666666666663,
+      "delta_frr": 0.0,
+      "initial_far": 0.5,
+      "initial_frr": 0.0,
+      "initial_gap": 0.5,
+      "mitigated_far": 0.6666666666666666,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.6666666666666666
+    },
+    "Female_20-39_Light__vs__Male_20-39_Light": {
+      "delta_far": 0.033333333333333326,
+      "delta_frr": 0.0,
+      "initial_far": 0.3,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3,
+      "mitigated_far": 0.3333333333333333,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.3333333333333333
+    },
+    "Female_20-39_Light__vs__Male_20-39_Medium": {
+      "delta_far": 0.24657534246575347,
+      "delta_frr": 0.0,
+      "initial_far": 0.2602739726027397,
+      "initial_frr": 0.0,
+      "initial_gap": 0.2602739726027397,
+      "mitigated_far": 0.5068493150684932,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5068493150684932
+    },
+    "Female_20-39_Light__vs__Male_40-59_Dark": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.5,
+      "initial_frr": 0.0,
+      "initial_gap": 0.5,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Female_20-39_Light__vs__Male_40-59_Light": {
+      "delta_far": 0.46153846153846156,
+      "delta_frr": 0.0,
+      "initial_far": 0.3076923076923077,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3076923076923077,
+      "mitigated_far": 0.7692307692307693,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.7692307692307693
+    },
+    "Female_20-39_Light__vs__Male_40-59_Medium": {
+      "delta_far": 0.33333333333333337,
+      "delta_frr": 0.0,
+      "initial_far": 0.05555555555555555,
+      "initial_frr": 0.0,
+      "initial_gap": 0.05555555555555555,
+      "mitigated_far": 0.3888888888888889,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.3888888888888889
+    },
+    "Female_20-39_Light__vs__Male_60+_Dark": {
+      "delta_far": 1.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 1.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 1.0
+    },
+    "Female_20-39_Light__vs__Male_60+_Light": {
+      "delta_far": 0.1764705882352941,
+      "delta_frr": 0.0,
+      "initial_far": 0.23529411764705882,
+      "initial_frr": 0.0,
+      "initial_gap": 0.23529411764705882,
+      "mitigated_far": 0.4117647058823529,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.4117647058823529
+    },
+    "Female_20-39_Light__vs__Male_60+_Medium": {
+      "delta_far": 0.43999999999999995,
+      "delta_frr": 0.0,
+      "initial_far": 0.28,
+      "initial_frr": 0.0,
+      "initial_gap": 0.28,
+      "mitigated_far": 0.72,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.72
+    },
+    "Female_20-39_Medium__vs__Female_40-59_Dark": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Female_20-39_Medium__vs__Female_40-59_Light": {
+      "delta_far": 0.18181818181818182,
+      "delta_frr": 0.0,
+      "initial_far": 0.45454545454545453,
+      "initial_frr": 0.0,
+      "initial_gap": 0.45454545454545453,
+      "mitigated_far": 0.6363636363636364,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.6363636363636364
+    },
+    "Female_20-39_Medium__vs__Female_40-59_Medium": {
+      "delta_far": 0.26315789473684215,
+      "delta_frr": 0.0,
+      "initial_far": 0.3157894736842105,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3157894736842105,
+      "mitigated_far": 0.5789473684210527,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5789473684210527
+    },
+    "Female_20-39_Medium__vs__Female_60+_Dark": {
+      "delta_far": 0.5,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Female_20-39_Medium__vs__Female_60+_Light": {
+      "delta_far": 0.11111111111111116,
+      "delta_frr": 0.0,
+      "initial_far": 0.4444444444444444,
+      "initial_frr": 0.0,
+      "initial_gap": 0.4444444444444444,
+      "mitigated_far": 0.5555555555555556,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5555555555555556
+    },
+    "Female_20-39_Medium__vs__Female_60+_Medium": {
+      "delta_far": 0.5,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Female_20-39_Medium__vs__Male_0-19_Dark": {
+      "delta_far": -0.2,
+      "delta_frr": 0.0,
+      "initial_far": 0.5,
+      "initial_frr": 0.0,
+      "initial_gap": 0.5,
+      "mitigated_far": 0.3,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.3
+    },
+    "Female_20-39_Medium__vs__Male_0-19_Light": {
+      "delta_far": 0.055555555555555525,
+      "delta_frr": 0.0,
+      "initial_far": 0.2777777777777778,
+      "initial_frr": 0.0,
+      "initial_gap": 0.2777777777777778,
+      "mitigated_far": 0.3333333333333333,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.3333333333333333
+    },
+    "Female_20-39_Medium__vs__Male_0-19_Medium": {
+      "delta_far": 0.21875,
+      "delta_frr": 0.0,
+      "initial_far": 0.28125,
+      "initial_frr": 0.0,
+      "initial_gap": 0.28125,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Female_20-39_Medium__vs__Male_20-39_Dark": {
+      "delta_far": 0.21739130434782608,
+      "delta_frr": 0.0,
+      "initial_far": 0.21739130434782608,
+      "initial_frr": 0.0,
+      "initial_gap": 0.21739130434782608,
+      "mitigated_far": 0.43478260869565216,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.43478260869565216
+    },
+    "Female_20-39_Medium__vs__Male_20-39_Light": {
+      "delta_far": 0.26666666666666666,
+      "delta_frr": 0.0,
+      "initial_far": 0.26666666666666666,
+      "initial_frr": 0.0,
+      "initial_gap": 0.26666666666666666,
+      "mitigated_far": 0.5333333333333333,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5333333333333333
+    },
+    "Female_20-39_Medium__vs__Male_20-39_Medium": {
+      "delta_far": 0.26666666666666666,
+      "delta_frr": 0.0,
+      "initial_far": 0.2,
+      "initial_frr": 0.0,
+      "initial_gap": 0.2,
+      "mitigated_far": 0.4666666666666667,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.4666666666666667
+    },
+    "Female_20-39_Medium__vs__Male_40-59_Dark": {
+      "delta_far": 0.39999999999999997,
+      "delta_frr": 0.0,
+      "initial_far": 0.2,
+      "initial_frr": 0.0,
+      "initial_gap": 0.2,
+      "mitigated_far": 0.6,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.6
+    },
+    "Female_20-39_Medium__vs__Male_40-59_Light": {
+      "delta_far": 0.1875,
+      "delta_frr": 0.0,
+      "initial_far": 0.375,
+      "initial_frr": 0.0,
+      "initial_gap": 0.375,
+      "mitigated_far": 0.5625,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5625
+    },
+    "Female_20-39_Medium__vs__Male_40-59_Medium": {
+      "delta_far": -0.02857142857142858,
+      "delta_frr": 0.0,
+      "initial_far": 0.37142857142857144,
+      "initial_frr": 0.0,
+      "initial_gap": 0.37142857142857144,
+      "mitigated_far": 0.34285714285714286,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.34285714285714286
+    },
+    "Female_20-39_Medium__vs__Male_60+_Dark": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.2,
+      "initial_frr": 0.0,
+      "initial_gap": 0.2,
+      "mitigated_far": 0.2,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.2
+    },
+    "Female_20-39_Medium__vs__Male_60+_Light": {
+      "delta_far": 0.125,
+      "delta_frr": 0.0,
+      "initial_far": 0.375,
+      "initial_frr": 0.0,
+      "initial_gap": 0.375,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Female_20-39_Medium__vs__Male_60+_Medium": {
+      "delta_far": 0.13333333333333336,
+      "delta_frr": 0.0,
+      "initial_far": 0.3333333333333333,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3333333333333333,
+      "mitigated_far": 0.4666666666666667,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.4666666666666667
+    },
+    "Female_40-59_Dark__vs__Female_40-59_Medium": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Female_40-59_Dark__vs__Male_0-19_Light": {
+      "delta_far": 0.5,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Female_40-59_Dark__vs__Male_0-19_Medium": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.5,
+      "initial_frr": 0.0,
+      "initial_gap": 0.5,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Female_40-59_Dark__vs__Male_20-39_Dark": {
+      "delta_far": -0.5,
+      "delta_frr": 0.0,
+      "initial_far": 1.0,
+      "initial_frr": 0.0,
+      "initial_gap": 1.0,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Female_40-59_Dark__vs__Male_20-39_Light": {
+      "delta_far": -0.3333333333333333,
+      "delta_frr": 0.0,
+      "initial_far": 0.6666666666666666,
+      "initial_frr": 0.0,
+      "initial_gap": 0.6666666666666666,
+      "mitigated_far": 0.3333333333333333,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.3333333333333333
+    },
+    "Female_40-59_Dark__vs__Male_20-39_Medium": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.5,
+      "initial_frr": 0.0,
+      "initial_gap": 0.5,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Female_40-59_Dark__vs__Male_40-59_Light": {
+      "delta_far": -0.5,
+      "delta_frr": 0.0,
+      "initial_far": 0.5,
+      "initial_frr": 0.0,
+      "initial_gap": 0.5,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Female_40-59_Dark__vs__Male_40-59_Medium": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Female_40-59_Dark__vs__Male_60+_Medium": {
+      "delta_far": -1.0,
+      "delta_frr": 0.0,
+      "initial_far": 1.0,
+      "initial_frr": 0.0,
+      "initial_gap": 1.0,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Female_40-59_Light__vs__Female_40-59_Medium": {
+      "delta_far": -0.5,
+      "delta_frr": 0.0,
+      "initial_far": 0.5,
+      "initial_frr": 0.0,
+      "initial_gap": 0.5,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Female_40-59_Light__vs__Male_0-19_Light": {
+      "delta_far": 1.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 1.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 1.0
+    },
+    "Female_40-59_Light__vs__Male_0-19_Medium": {
+      "delta_far": 0.3333333333333333,
+      "delta_frr": 0.0,
+      "initial_far": 0.3333333333333333,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3333333333333333,
+      "mitigated_far": 0.6666666666666666,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.6666666666666666
+    },
+    "Female_40-59_Light__vs__Male_20-39_Dark": {
+      "delta_far": 1.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 1.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 1.0
+    },
+    "Female_40-59_Light__vs__Male_20-39_Light": {
+      "delta_far": 0.4,
+      "delta_frr": 0.0,
+      "initial_far": 0.6,
+      "initial_frr": 0.0,
+      "initial_gap": 0.6,
+      "mitigated_far": 1.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 1.0
+    },
+    "Female_40-59_Light__vs__Male_20-39_Medium": {
+      "delta_far": 0.25,
+      "delta_frr": 0.0,
+      "initial_far": 0.375,
+      "initial_frr": 0.0,
+      "initial_gap": 0.375,
+      "mitigated_far": 0.625,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.625
+    },
+    "Female_40-59_Light__vs__Male_40-59_Dark": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Female_40-59_Light__vs__Male_40-59_Light": {
+      "delta_far": -0.5,
+      "delta_frr": 0.0,
+      "initial_far": 0.5,
+      "initial_frr": 0.0,
+      "initial_gap": 0.5,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Female_40-59_Light__vs__Male_40-59_Medium": {
+      "delta_far": 0.19999999999999996,
+      "delta_frr": 0.0,
+      "initial_far": 0.4,
+      "initial_frr": 0.0,
+      "initial_gap": 0.4,
+      "mitigated_far": 0.6,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.6
+    },
+    "Female_40-59_Light__vs__Male_60+_Medium": {
+      "delta_far": -1.0,
+      "delta_frr": 0.0,
+      "initial_far": 1.0,
+      "initial_frr": 0.0,
+      "initial_gap": 1.0,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Female_40-59_Medium__vs__Female_60+_Medium": {
+      "delta_far": 0.2,
+      "delta_frr": 0.0,
+      "initial_far": 0.2,
+      "initial_frr": 0.0,
+      "initial_gap": 0.2,
+      "mitigated_far": 0.4,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.4
+    },
+    "Female_40-59_Medium__vs__Male_0-19_Dark": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.3333333333333333,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3333333333333333,
+      "mitigated_far": 0.3333333333333333,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.3333333333333333
+    },
+    "Female_40-59_Medium__vs__Male_0-19_Light": {
+      "delta_far": 0.2,
+      "delta_frr": 0.0,
+      "initial_far": 0.2,
+      "initial_frr": 0.0,
+      "initial_gap": 0.2,
+      "mitigated_far": 0.4,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.4
+    },
+    "Female_40-59_Medium__vs__Male_0-19_Medium": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.25,
+      "initial_frr": 0.0,
+      "initial_gap": 0.25,
+      "mitigated_far": 0.25,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.25
+    },
+    "Female_40-59_Medium__vs__Male_20-39_Dark": {
+      "delta_far": -0.3333333333333333,
+      "delta_frr": 0.0,
+      "initial_far": 0.3333333333333333,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3333333333333333,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Female_40-59_Medium__vs__Male_20-39_Light": {
+      "delta_far": -0.08333333333333331,
+      "delta_frr": 0.0,
+      "initial_far": 0.5,
+      "initial_frr": 0.0,
+      "initial_gap": 0.5,
+      "mitigated_far": 0.4166666666666667,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.4166666666666667
+    },
+    "Female_40-59_Medium__vs__Male_20-39_Medium": {
+      "delta_far": 0.3076923076923077,
+      "delta_frr": 0.0,
+      "initial_far": 0.46153846153846156,
+      "initial_frr": 0.0,
+      "initial_gap": 0.46153846153846156,
+      "mitigated_far": 0.7692307692307693,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.7692307692307693
+    },
+    "Female_40-59_Medium__vs__Male_40-59_Light": {
+      "delta_far": 0.5,
+      "delta_frr": 0.0,
+      "initial_far": 0.25,
+      "initial_frr": 0.0,
+      "initial_gap": 0.25,
+      "mitigated_far": 0.75,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.75
+    },
+    "Female_40-59_Medium__vs__Male_40-59_Medium": {
+      "delta_far": 0.5,
+      "delta_frr": 0.0,
+      "initial_far": 0.3333333333333333,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3333333333333333,
+      "mitigated_far": 0.8333333333333334,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.8333333333333334
+    },
+    "Female_40-59_Medium__vs__Male_60+_Light": {
+      "delta_far": -0.5,
+      "delta_frr": 0.0,
+      "initial_far": 1.0,
+      "initial_frr": 0.0,
+      "initial_gap": 1.0,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Female_40-59_Medium__vs__Male_60+_Medium": {
+      "delta_far": 0.25,
+      "delta_frr": 0.0,
+      "initial_far": 0.25,
+      "initial_frr": 0.0,
+      "initial_gap": 0.25,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Female_60+_Dark__vs__Male_0-19_Light": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 1.0,
+      "initial_frr": 0.0,
+      "initial_gap": 1.0,
+      "mitigated_far": 1.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 1.0
+    },
+    "Female_60+_Dark__vs__Male_20-39_Light": {
+      "delta_far": -1.0,
+      "delta_frr": 0.0,
+      "initial_far": 1.0,
+      "initial_frr": 0.0,
+      "initial_gap": 1.0,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Female_60+_Dark__vs__Male_20-39_Medium": {
+      "delta_far": 0.5,
+      "delta_frr": 0.0,
+      "initial_far": 0.5,
+      "initial_frr": 0.0,
+      "initial_gap": 0.5,
+      "mitigated_far": 1.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 1.0
+    },
+    "Female_60+_Dark__vs__Male_40-59_Dark": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 1.0,
+      "initial_frr": 0.0,
+      "initial_gap": 1.0,
+      "mitigated_far": 1.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 1.0
+    },
+    "Female_60+_Dark__vs__Male_40-59_Medium": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 1.0,
+      "initial_frr": 0.0,
+      "initial_gap": 1.0,
+      "mitigated_far": 1.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 1.0
+    },
+    "Female_60+_Dark__vs__Male_60+_Medium": {
+      "delta_far": 1.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 1.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 1.0
+    },
+    "Female_60+_Light__vs__Female_60+_Medium": {
+      "delta_far": 1.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 1.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 1.0
+    },
+    "Female_60+_Light__vs__Male_0-19_Dark": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Female_60+_Light__vs__Male_0-19_Light": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 1.0,
+      "initial_frr": 0.0,
+      "initial_gap": 1.0,
+      "mitigated_far": 1.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 1.0
+    },
+    "Female_60+_Light__vs__Male_0-19_Medium": {
+      "delta_far": 0.5,
+      "delta_frr": 0.0,
+      "initial_far": 0.25,
+      "initial_frr": 0.0,
+      "initial_gap": 0.25,
+      "mitigated_far": 0.75,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.75
+    },
+    "Female_60+_Light__vs__Male_20-39_Dark": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 1.0,
+      "initial_frr": 0.0,
+      "initial_gap": 1.0,
+      "mitigated_far": 1.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 1.0
+    },
+    "Female_60+_Light__vs__Male_20-39_Light": {
+      "delta_far": 1.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 1.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 1.0
+    },
+    "Female_60+_Light__vs__Male_20-39_Medium": {
+      "delta_far": -0.5,
+      "delta_frr": 0.0,
+      "initial_far": 0.5,
+      "initial_frr": 0.0,
+      "initial_gap": 0.5,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Female_60+_Light__vs__Male_40-59_Medium": {
+      "delta_far": 0.5,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Female_60+_Light__vs__Male_60+_Medium": {
+      "delta_far": 1.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 1.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 1.0
+    },
+    "Female_60+_Medium__vs__Male_0-19_Dark": {
+      "delta_far": 1.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 1.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 1.0
+    },
+    "Female_60+_Medium__vs__Male_0-19_Light": {
+      "delta_far": 0.3333333333333333,
+      "delta_frr": 0.0,
+      "initial_far": 0.3333333333333333,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3333333333333333,
+      "mitigated_far": 0.6666666666666666,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.6666666666666666
+    },
+    "Female_60+_Medium__vs__Male_0-19_Medium": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.8,
+      "initial_frr": 0.0,
+      "initial_gap": 0.8,
+      "mitigated_far": 0.8,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.8
+    },
+    "Female_60+_Medium__vs__Male_20-39_Dark": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Female_60+_Medium__vs__Male_20-39_Light": {
+      "delta_far": 0.5,
+      "delta_frr": 0.0,
+      "initial_far": 0.16666666666666666,
+      "initial_frr": 0.0,
+      "initial_gap": 0.16666666666666666,
+      "mitigated_far": 0.6666666666666666,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.6666666666666666
+    },
+    "Female_60+_Medium__vs__Male_20-39_Medium": {
+      "delta_far": 0.33333333333333337,
+      "delta_frr": 0.0,
+      "initial_far": 0.2222222222222222,
+      "initial_frr": 0.0,
+      "initial_gap": 0.2222222222222222,
+      "mitigated_far": 0.5555555555555556,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5555555555555556
+    },
+    "Female_60+_Medium__vs__Male_40-59_Dark": {
+      "delta_far": -1.0,
+      "delta_frr": 0.0,
+      "initial_far": 1.0,
+      "initial_frr": 0.0,
+      "initial_gap": 1.0,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Female_60+_Medium__vs__Male_40-59_Light": {
+      "delta_far": 0.3333333333333333,
+      "delta_frr": 0.0,
+      "initial_far": 0.3333333333333333,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3333333333333333,
+      "mitigated_far": 0.6666666666666666,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.6666666666666666
+    },
+    "Female_60+_Medium__vs__Male_40-59_Medium": {
+      "delta_far": 0.5,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Female_60+_Medium__vs__Male_60+_Medium": {
+      "delta_far": -0.25,
+      "delta_frr": 0.0,
+      "initial_far": 0.75,
+      "initial_frr": 0.0,
+      "initial_gap": 0.75,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Male_0-19_Dark__vs__Male_0-19_Light": {
+      "delta_far": -0.5,
+      "delta_frr": 0.0,
+      "initial_far": 0.5,
+      "initial_frr": 0.0,
+      "initial_gap": 0.5,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Male_0-19_Dark__vs__Male_0-19_Medium": {
+      "delta_far": -0.4,
+      "delta_frr": 0.0,
+      "initial_far": 0.8,
+      "initial_frr": 0.0,
+      "initial_gap": 0.8,
+      "mitigated_far": 0.4,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.4
+    },
+    "Male_0-19_Dark__vs__Male_20-39_Dark": {
+      "delta_far": 0.5,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Male_0-19_Dark__vs__Male_20-39_Light": {
+      "delta_far": 0.18181818181818182,
+      "delta_frr": 0.0,
+      "initial_far": 0.18181818181818182,
+      "initial_frr": 0.0,
+      "initial_gap": 0.18181818181818182,
+      "mitigated_far": 0.36363636363636365,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.36363636363636365
+    },
+    "Male_0-19_Dark__vs__Male_20-39_Medium": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.3076923076923077,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3076923076923077,
+      "mitigated_far": 0.3076923076923077,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.3076923076923077
+    },
+    "Male_0-19_Dark__vs__Male_40-59_Dark": {
+      "delta_far": -0.5,
+      "delta_frr": 0.0,
+      "initial_far": 1.0,
+      "initial_frr": 0.0,
+      "initial_gap": 1.0,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Male_0-19_Dark__vs__Male_40-59_Light": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.5,
+      "initial_frr": 0.0,
+      "initial_gap": 0.5,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Male_0-19_Dark__vs__Male_40-59_Medium": {
+      "delta_far": 0.125,
+      "delta_frr": 0.0,
+      "initial_far": 0.5,
+      "initial_frr": 0.0,
+      "initial_gap": 0.5,
+      "mitigated_far": 0.625,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.625
+    },
+    "Male_0-19_Dark__vs__Male_60+_Dark": {
+      "delta_far": -0.5,
+      "delta_frr": 0.0,
+      "initial_far": 0.5,
+      "initial_frr": 0.0,
+      "initial_gap": 0.5,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Male_0-19_Dark__vs__Male_60+_Light": {
+      "delta_far": -0.5,
+      "delta_frr": 0.0,
+      "initial_far": 0.5,
+      "initial_frr": 0.0,
+      "initial_gap": 0.5,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Male_0-19_Dark__vs__Male_60+_Medium": {
+      "delta_far": 0.3333333333333333,
+      "delta_frr": 0.0,
+      "initial_far": 0.3333333333333333,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3333333333333333,
+      "mitigated_far": 0.6666666666666666,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.6666666666666666
+    },
+    "Male_0-19_Light__vs__Male_0-19_Medium": {
+      "delta_far": 0.3333333333333333,
+      "delta_frr": 0.0,
+      "initial_far": 0.26666666666666666,
+      "initial_frr": 0.0,
+      "initial_gap": 0.26666666666666666,
+      "mitigated_far": 0.6,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.6
+    },
+    "Male_0-19_Light__vs__Male_20-39_Dark": {
+      "delta_far": 0.6000000000000001,
+      "delta_frr": 0.0,
+      "initial_far": 0.2,
+      "initial_frr": 0.0,
+      "initial_gap": 0.2,
+      "mitigated_far": 0.8,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.8
+    },
+    "Male_0-19_Light__vs__Male_20-39_Light": {
+      "delta_far": -0.06666666666666671,
+      "delta_frr": 0.0,
+      "initial_far": 0.4,
+      "initial_frr": 0.0,
+      "initial_gap": 0.4,
+      "mitigated_far": 0.3333333333333333,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.3333333333333333
+    },
+    "Male_0-19_Light__vs__Male_20-39_Medium": {
+      "delta_far": 0.1111111111111111,
+      "delta_frr": 0.0,
+      "initial_far": 0.37037037037037035,
+      "initial_frr": 0.0,
+      "initial_gap": 0.37037037037037035,
+      "mitigated_far": 0.48148148148148145,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.48148148148148145
+    },
+    "Male_0-19_Light__vs__Male_40-59_Light": {
+      "delta_far": 0.3333333333333333,
+      "delta_frr": 0.0,
+      "initial_far": 0.3333333333333333,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3333333333333333,
+      "mitigated_far": 0.6666666666666666,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.6666666666666666
+    },
+    "Male_0-19_Light__vs__Male_40-59_Medium": {
+      "delta_far": 0.19999999999999998,
+      "delta_frr": 0.0,
+      "initial_far": 0.1,
+      "initial_frr": 0.0,
+      "initial_gap": 0.1,
+      "mitigated_far": 0.3,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.3
+    },
+    "Male_0-19_Light__vs__Male_60+_Dark": {
+      "delta_far": 1.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 1.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 1.0
+    },
+    "Male_0-19_Light__vs__Male_60+_Light": {
+      "delta_far": 0.3333333333333333,
+      "delta_frr": 0.0,
+      "initial_far": 0.3333333333333333,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3333333333333333,
+      "mitigated_far": 0.6666666666666666,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.6666666666666666
+    },
+    "Male_0-19_Light__vs__Male_60+_Medium": {
+      "delta_far": 0.5714285714285714,
+      "delta_frr": 0.0,
+      "initial_far": 0.14285714285714285,
+      "initial_frr": 0.0,
+      "initial_gap": 0.14285714285714285,
+      "mitigated_far": 0.7142857142857143,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.7142857142857143
+    },
+    "Male_0-19_Medium__vs__Male_20-39_Dark": {
+      "delta_far": 0.25000000000000006,
+      "delta_frr": 0.0,
+      "initial_far": 0.3333333333333333,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3333333333333333,
+      "mitigated_far": 0.5833333333333334,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5833333333333334
+    },
+    "Male_0-19_Medium__vs__Male_20-39_Light": {
+      "delta_far": 0.5,
+      "delta_frr": 0.0,
+      "initial_far": 0.1,
+      "initial_frr": 0.0,
+      "initial_gap": 0.1,
+      "mitigated_far": 0.6,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.6
+    },
+    "Male_0-19_Medium__vs__Male_20-39_Medium": {
+      "delta_far": 0.24999999999999994,
+      "delta_frr": 0.0,
+      "initial_far": 0.32142857142857145,
+      "initial_frr": 0.0,
+      "initial_gap": 0.32142857142857145,
+      "mitigated_far": 0.5714285714285714,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5714285714285714
+    },
+    "Male_0-19_Medium__vs__Male_40-59_Dark": {
+      "delta_far": -0.3333333333333333,
+      "delta_frr": 0.0,
+      "initial_far": 0.3333333333333333,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3333333333333333,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Male_0-19_Medium__vs__Male_40-59_Light": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.6,
+      "initial_frr": 0.0,
+      "initial_gap": 0.6,
+      "mitigated_far": 0.6,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.6
+    },
+    "Male_0-19_Medium__vs__Male_40-59_Medium": {
+      "delta_far": 0.21739130434782605,
+      "delta_frr": 0.0,
+      "initial_far": 0.30434782608695654,
+      "initial_frr": 0.0,
+      "initial_gap": 0.30434782608695654,
+      "mitigated_far": 0.5217391304347826,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5217391304347826
+    },
+    "Male_0-19_Medium__vs__Male_60+_Dark": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Male_0-19_Medium__vs__Male_60+_Light": {
+      "delta_far": 0.3333333333333333,
+      "delta_frr": 0.0,
+      "initial_far": 0.3333333333333333,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3333333333333333,
+      "mitigated_far": 0.6666666666666666,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.6666666666666666
+    },
+    "Male_0-19_Medium__vs__Male_60+_Medium": {
+      "delta_far": 0.5454545454545454,
+      "delta_frr": 0.0,
+      "initial_far": 0.09090909090909091,
+      "initial_frr": 0.0,
+      "initial_gap": 0.09090909090909091,
+      "mitigated_far": 0.6363636363636364,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.6363636363636364
+    },
+    "Male_20-39_Dark__vs__Male_20-39_Light": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.3333333333333333,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3333333333333333,
+      "mitigated_far": 0.3333333333333333,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.3333333333333333
+    },
+    "Male_20-39_Dark__vs__Male_20-39_Medium": {
+      "delta_far": 0.375,
+      "delta_frr": 0.0,
+      "initial_far": 0.375,
+      "initial_frr": 0.0,
+      "initial_gap": 0.375,
+      "mitigated_far": 0.75,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.75
+    },
+    "Male_20-39_Dark__vs__Male_40-59_Dark": {
+      "delta_far": 0.5,
+      "delta_frr": 0.0,
+      "initial_far": 0.5,
+      "initial_frr": 0.0,
+      "initial_gap": 0.5,
+      "mitigated_far": 1.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 1.0
+    },
+    "Male_20-39_Dark__vs__Male_40-59_Light": {
+      "delta_far": 0.75,
+      "delta_frr": 0.0,
+      "initial_far": 0.125,
+      "initial_frr": 0.0,
+      "initial_gap": 0.125,
+      "mitigated_far": 0.875,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.875
+    },
+    "Male_20-39_Dark__vs__Male_40-59_Medium": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.5,
+      "initial_frr": 0.0,
+      "initial_gap": 0.5,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Male_20-39_Dark__vs__Male_60+_Dark": {
+      "delta_far": -0.5,
+      "delta_frr": 0.0,
+      "initial_far": 1.0,
+      "initial_frr": 0.0,
+      "initial_gap": 1.0,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Male_20-39_Dark__vs__Male_60+_Light": {
+      "delta_far": 0.25,
+      "delta_frr": 0.0,
+      "initial_far": 0.5,
+      "initial_frr": 0.0,
+      "initial_gap": 0.5,
+      "mitigated_far": 0.75,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.75
+    },
+    "Male_20-39_Dark__vs__Male_60+_Medium": {
+      "delta_far": 0.3333333333333333,
+      "delta_frr": 0.0,
+      "initial_far": 0.3333333333333333,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3333333333333333,
+      "mitigated_far": 0.6666666666666666,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.6666666666666666
+    },
+    "Male_20-39_Light__vs__Male_20-39_Medium": {
+      "delta_far": 0.11904761904761901,
+      "delta_frr": 0.0,
+      "initial_far": 0.2619047619047619,
+      "initial_frr": 0.0,
+      "initial_gap": 0.2619047619047619,
+      "mitigated_far": 0.38095238095238093,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.38095238095238093
+    },
+    "Male_20-39_Light__vs__Male_40-59_Dark": {
+      "delta_far": -0.3333333333333333,
+      "delta_frr": 0.0,
+      "initial_far": 0.6666666666666666,
+      "initial_frr": 0.0,
+      "initial_gap": 0.6666666666666666,
+      "mitigated_far": 0.3333333333333333,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.3333333333333333
+    },
+    "Male_20-39_Light__vs__Male_40-59_Light": {
+      "delta_far": 0.18181818181818182,
+      "delta_frr": 0.0,
+      "initial_far": 0.2727272727272727,
+      "initial_frr": 0.0,
+      "initial_gap": 0.2727272727272727,
+      "mitigated_far": 0.45454545454545453,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.45454545454545453
+    },
+    "Male_20-39_Light__vs__Male_40-59_Medium": {
+      "delta_far": 0.14285714285714285,
+      "delta_frr": 0.0,
+      "initial_far": 0.42857142857142855,
+      "initial_frr": 0.0,
+      "initial_gap": 0.42857142857142855,
+      "mitigated_far": 0.5714285714285714,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5714285714285714
+    },
+    "Male_20-39_Light__vs__Male_60+_Dark": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.2,
+      "initial_frr": 0.0,
+      "initial_gap": 0.2,
+      "mitigated_far": 0.2,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.2
+    },
+    "Male_20-39_Light__vs__Male_60+_Light": {
+      "delta_far": 0.18181818181818182,
+      "delta_frr": 0.0,
+      "initial_far": 0.45454545454545453,
+      "initial_frr": 0.0,
+      "initial_gap": 0.45454545454545453,
+      "mitigated_far": 0.6363636363636364,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.6363636363636364
+    },
+    "Male_20-39_Light__vs__Male_60+_Medium": {
+      "delta_far": 0.2727272727272727,
+      "delta_frr": 0.0,
+      "initial_far": 0.2727272727272727,
+      "initial_frr": 0.0,
+      "initial_gap": 0.2727272727272727,
+      "mitigated_far": 0.5454545454545454,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5454545454545454
+    },
+    "Male_20-39_Medium__vs__Male_40-59_Dark": {
+      "delta_far": 0.2,
+      "delta_frr": 0.0,
+      "initial_far": 0.2,
+      "initial_frr": 0.0,
+      "initial_gap": 0.2,
+      "mitigated_far": 0.4,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.4
+    },
+    "Male_20-39_Medium__vs__Male_40-59_Light": {
+      "delta_far": 0.1538461538461538,
+      "delta_frr": 0.0,
+      "initial_far": 0.38461538461538464,
+      "initial_frr": 0.0,
+      "initial_gap": 0.38461538461538464,
+      "mitigated_far": 0.5384615384615384,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5384615384615384
+    },
+    "Male_20-39_Medium__vs__Male_40-59_Medium": {
+      "delta_far": 0.40625,
+      "delta_frr": 0.0,
+      "initial_far": 0.28125,
+      "initial_frr": 0.0,
+      "initial_gap": 0.28125,
+      "mitigated_far": 0.6875,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.6875
+    },
+    "Male_20-39_Medium__vs__Male_60+_Dark": {
+      "delta_far": 0.5,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Male_20-39_Medium__vs__Male_60+_Light": {
+      "delta_far": -0.07142857142857145,
+      "delta_frr": 0.0,
+      "initial_far": 0.5,
+      "initial_frr": 0.0,
+      "initial_gap": 0.5,
+      "mitigated_far": 0.42857142857142855,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.42857142857142855
+    },
+    "Male_20-39_Medium__vs__Male_60+_Medium": {
+      "delta_far": 0.08695652173913043,
+      "delta_frr": 0.0,
+      "initial_far": 0.391304347826087,
+      "initial_frr": 0.0,
+      "initial_gap": 0.391304347826087,
+      "mitigated_far": 0.4782608695652174,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.4782608695652174
+    },
+    "Male_40-59_Dark__vs__Male_40-59_Light": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 1.0,
+      "initial_frr": 0.0,
+      "initial_gap": 1.0,
+      "mitigated_far": 1.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 1.0
+    },
+    "Male_40-59_Dark__vs__Male_40-59_Medium": {
+      "delta_far": 1.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 1.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 1.0
+    },
+    "Male_40-59_Dark__vs__Male_60+_Dark": {
+      "delta_far": -1.0,
+      "delta_frr": 0.0,
+      "initial_far": 1.0,
+      "initial_frr": 0.0,
+      "initial_gap": 1.0,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Male_40-59_Dark__vs__Male_60+_Light": {
+      "delta_far": -0.5,
+      "delta_frr": 0.0,
+      "initial_far": 1.0,
+      "initial_frr": 0.0,
+      "initial_gap": 1.0,
+      "mitigated_far": 0.5,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.5
+    },
+    "Male_40-59_Light__vs__Male_40-59_Medium": {
+      "delta_far": 0.75,
+      "delta_frr": 0.0,
+      "initial_far": 0.25,
+      "initial_frr": 0.0,
+      "initial_gap": 0.25,
+      "mitigated_far": 1.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 1.0
+    },
+    "Male_40-59_Light__vs__Male_60+_Light": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Male_40-59_Light__vs__Male_60+_Medium": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.0,
+      "initial_gap": 0.0,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.0
+    },
+    "Male_40-59_Medium__vs__Male_60+_Dark": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.3333333333333333,
+      "initial_frr": 0.0,
+      "initial_gap": 0.3333333333333333,
+      "mitigated_far": 0.3333333333333333,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.3333333333333333
+    },
+    "Male_40-59_Medium__vs__Male_60+_Light": {
+      "delta_far": 0.20000000000000007,
+      "delta_frr": 0.0,
+      "initial_far": 0.6,
+      "initial_frr": 0.0,
+      "initial_gap": 0.6,
+      "mitigated_far": 0.8,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.8
+    },
+    "Male_40-59_Medium__vs__Male_60+_Medium": {
+      "delta_far": 0.33333333333333337,
+      "delta_frr": 0.0,
+      "initial_far": 0.5,
+      "initial_frr": 0.0,
+      "initial_gap": 0.5,
+      "mitigated_far": 0.8333333333333334,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.8333333333333334
+    },
+    "Male_60+_Light__vs__Male_60+_Medium": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.6666666666666666,
+      "initial_frr": 0.0,
+      "initial_gap": 0.6666666666666666,
+      "mitigated_far": 0.6666666666666666,
+      "mitigated_frr": 0.0,
+      "mitigated_gap": 0.6666666666666666
+    }
+  },
+  "cross_group_fairness_improvement": -0.14890095678011275,
+  "fairness_improved": false,
+  "largest_improvement": {
+    "group": "Female_40-59_Light",
+    "improvement": 0.5,
+    "metric": "frr"
+  },
+  "largest_remaining_gap": {
+    "group": "Female_40-59_Dark",
+    "metric": "frr",
+    "value": 0.6666666666666666
+  },
+  "most_improved_cross_group_pairing": {
+    "improvement": 1.0,
+    "pair": "Female_40-59_Dark__vs__Male_60+_Medium",
+    "value": 0.0
+  },
+  "overall_improvement": {
+    "far_after": 0.5193936691930451,
+    "far_before": 0.32456531431119034,
+    "frr_after": 0.468568880962996,
+    "frr_before": 0.6286223807400803
+  },
+  "subgroup_deltas": {
+    "Female_0-19_Dark": {
+      "delta_far": 0.0,
+      "delta_frr": 0.1538461538461538,
+      "initial_far": 0.0,
+      "initial_frr": 0.38461538461538464,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.5384615384615384,
+      "support": 52
+    },
+    "Female_0-19_Light": {
+      "delta_far": 0.0,
+      "delta_frr": -0.2533333333333333,
+      "initial_far": 0.0,
+      "initial_frr": 0.6666666666666666,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.41333333333333333,
+      "support": 75
+    },
+    "Female_0-19_Medium": {
+      "delta_far": 0.0,
+      "delta_frr": -0.24827586206896546,
+      "initial_far": 0.0,
+      "initial_frr": 0.696551724137931,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.4482758620689655,
+      "support": 145
+    },
+    "Female_20-39_Dark": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.5063291139240507,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.5063291139240507,
+      "support": 79
+    },
+    "Female_20-39_Light": {
+      "delta_far": 0.0,
+      "delta_frr": -0.19213973799126643,
+      "initial_far": 0.0,
+      "initial_frr": 0.6375545851528385,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.44541484716157204,
+      "support": 229
+    },
+    "Female_20-39_Medium": {
+      "delta_far": 0.0,
+      "delta_frr": -0.2322097378277153,
+      "initial_far": 0.0,
+      "initial_frr": 0.7078651685393258,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.4756554307116105,
+      "support": 267
+    },
+    "Female_40-59_Dark": {
+      "delta_far": 0.0,
+      "delta_frr": 0.3333333333333333,
+      "initial_far": 0.0,
+      "initial_frr": 0.3333333333333333,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.6666666666666666,
+      "support": 15
+    },
+    "Female_40-59_Light": {
+      "delta_far": 0.0,
+      "delta_frr": -0.5,
+      "initial_far": 0.0,
+      "initial_frr": 0.7058823529411765,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.20588235294117646,
+      "support": 34
+    },
+    "Female_40-59_Medium": {
+      "delta_far": 0.0,
+      "delta_frr": -0.265625,
+      "initial_far": 0.0,
+      "initial_frr": 0.65625,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.390625,
+      "support": 64
+    },
+    "Female_60+_Dark": {
+      "delta_far": 0.0,
+      "delta_frr": 0.25,
+      "initial_far": 0.0,
+      "initial_frr": 0.3125,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.5625,
+      "support": 16
+    },
+    "Female_60+_Light": {
+      "delta_far": 0.0,
+      "delta_frr": -0.45833333333333337,
+      "initial_far": 0.0,
+      "initial_frr": 0.7083333333333334,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.25,
+      "support": 24
+    },
+    "Female_60+_Medium": {
+      "delta_far": 0.0,
+      "delta_frr": -0.33333333333333337,
+      "initial_far": 0.0,
+      "initial_frr": 0.7111111111111111,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.37777777777777777,
+      "support": 45
+    },
+    "Male_0-19_Dark": {
+      "delta_far": 0.0,
+      "delta_frr": -0.01851851851851849,
+      "initial_far": 0.0,
+      "initial_frr": 0.5740740740740741,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.5555555555555556,
+      "support": 54
+    },
+    "Male_0-19_Light": {
+      "delta_far": 0.0,
+      "delta_frr": -0.17647058823529416,
+      "initial_far": 0.0,
+      "initial_frr": 0.7176470588235294,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.5411764705882353,
+      "support": 85
+    },
+    "Male_0-19_Medium": {
+      "delta_far": 0.0,
+      "delta_frr": -0.1721854304635761,
+      "initial_far": 0.0,
+      "initial_frr": 0.6423841059602649,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.47019867549668876,
+      "support": 151
+    },
+    "Male_20-39_Dark": {
+      "delta_far": 0.0,
+      "delta_frr": -0.10144927536231879,
+      "initial_far": 0.0,
+      "initial_frr": 0.5652173913043478,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.463768115942029,
+      "support": 69
+    },
+    "Male_20-39_Light": {
+      "delta_far": 0.0,
+      "delta_frr": -0.15343915343915338,
+      "initial_far": 0.0,
+      "initial_frr": 0.656084656084656,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.5026455026455027,
+      "support": 189
+    },
+    "Male_20-39_Medium": {
+      "delta_far": 0.0,
+      "delta_frr": -0.1858974358974359,
+      "initial_far": 0.0,
+      "initial_frr": 0.625,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.4391025641025641,
+      "support": 312
+    },
+    "Male_40-59_Dark": {
+      "delta_far": 0.0,
+      "delta_frr": 0.18181818181818177,
+      "initial_far": 0.0,
+      "initial_frr": 0.36363636363636365,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.5454545454545454,
+      "support": 22
+    },
+    "Male_40-59_Light": {
+      "delta_far": 0.0,
+      "delta_frr": -0.10344827586206906,
+      "initial_far": 0.0,
+      "initial_frr": 0.6379310344827587,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.5344827586206896,
+      "support": 58
+    },
+    "Male_40-59_Medium": {
+      "delta_far": 0.0,
+      "delta_frr": -0.05555555555555558,
+      "initial_far": 0.0,
+      "initial_frr": 0.6111111111111112,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.5555555555555556,
+      "support": 108
+    },
+    "Male_60+_Dark": {
+      "delta_far": 0.0,
+      "delta_frr": 0.16666666666666669,
+      "initial_far": 0.0,
+      "initial_frr": 0.4166666666666667,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.5833333333333334,
+      "support": 12
+    },
+    "Male_60+_Light": {
+      "delta_far": 0.0,
+      "delta_frr": 0.0,
+      "initial_far": 0.0,
+      "initial_frr": 0.5686274509803921,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.5686274509803921,
+      "support": 51
+    },
+    "Male_60+_Medium": {
+      "delta_far": 0.0,
+      "delta_frr": -0.14942528735632182,
+      "initial_far": 0.0,
+      "initial_frr": 0.5402298850574713,
+      "mitigated_far": 0.0,
+      "mitigated_frr": 0.39080459770114945,
+      "support": 87
+    }
+  },
+  "worst_remaining_subgroup": "Female_40-59_Dark"
+}
