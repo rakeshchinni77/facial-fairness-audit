@@ -1,0 +1,65 @@
+{
+  "deployment_readiness": {
+    "reason": "Current fairness disparities and high FRR indicate the system is not suitable for high-stakes deployment without mitigation.",
+    "recommended_for_high_stakes_use": false
+  },
+  "ethical_implications": [
+    "High FRR disparities may disproportionately deny access to some demographic groups, especially when legitimate users are rejected at different rates.",
+    "Cross-group instability is visible in Female_20-39_Dark__vs__Male_40-59_Dark, where pairwise error behavior shifts sharply across intersections.",
+    "A biometric system with disparate acceptance and rejection behavior can create unequal treatment even when overall performance looks acceptable.",
+    "Fairness audits are required in biometric systems because these errors affect access, authentication, and downstream trust at the individual level."
+  ],
+  "fairness_risk_level": "HIGH",
+  "hypothesized_causes": {
+    "data_level": [
+      "Some demographic slices have much smaller support than others, including groups such as Male_60+_Dark, Female_40-59_Dark, Female_60+_Dark.",
+      "The worst FRR subgroup (Male_0-19_Light) still shows only 85 paired samples, which can make its estimate less stable than dense groups.",
+      "The audit distribution is uneven across age and skin-tone combinations, which can amplify representation gaps for older and darker-skinned groups.",
+      "Mixed demographic pairs with very small support counts indicate sparse coverage for some intersectional combinations."
+    ],
+    "model_level": [
+      "The existing ResNet18 embedding stack may not separate demographic manifolds equally well, which is consistent with high subgroup FRR variance.",
+      "The overall FRR remains elevated at 0.628622, suggesting weak match/non-match separation at the current operating point.",
+      "The worst cross-group pairing (Female_20-39_Dark__vs__Male_40-59_Dark) reaches FAR=1.000000, which is consistent with unstable decision boundaries across intersections.",
+      "The largest FRR gap of 0.405147 suggests threshold sensitivity across demographic slices rather than uniformly calibrated scores.",
+      "ImageNet-style pretraining can leave residual feature bias if the embedding head is not sufficiently adapted to the face-verification domain.",
+      "The high rejection rate for some groups is consistent with underfitting or demographic feature entanglement in the learned embedding space."
+    ]
+  },
+  "largest_far_disparity": {
+    "group_1": "Female_20-39_Dark",
+    "group_2": "Male_40-59_Dark",
+    "metric": "far_disparity",
+    "support": 1,
+    "value": 1.0
+  },
+  "largest_frr_disparity": {
+    "group_1": "Female_60+_Dark",
+    "group_2": "Male_0-19_Light",
+    "metric": "frr_disparity",
+    "value": 0.405147
+  },
+  "most_affected_demographics": [
+    "Male_0-19_Light",
+    "Female_60+_Medium"
+  ],
+  "most_biased_pairing": {
+    "best_group_frr": 0.3125,
+    "group_1": "Female_60+_Dark",
+    "group_2": "Male_0-19_Light",
+    "metric": "frr_disparity",
+    "value": 0.405147,
+    "worst_group_frr": 0.717647
+  },
+  "worst_cross_group_pairing": {
+    "far": 1.0,
+    "frr": 0.0,
+    "pair": "Female_20-39_Dark__vs__Male_40-59_Dark",
+    "support": 1
+  },
+  "worst_subgroup": {
+    "frr": 0.717647,
+    "group": "Male_0-19_Light",
+    "support": 85
+  }
+}
