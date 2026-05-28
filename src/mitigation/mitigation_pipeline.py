@@ -278,6 +278,7 @@ def run_mitigation_epoch(
 
 def build_training_summary(
 	epochs_completed: int,
+	final_training_loss: float,
 	fairness_weights: dict[str, float],
 	validation_loss: float,
 	checkpoint_paths: dict[str, str],
@@ -286,6 +287,9 @@ def build_training_summary(
 ) -> dict[str, Any]:
 	return {
 		"epochs": int(epochs_completed),
+		"final_training_loss": round(float(final_training_loss), 6),
+		"subgroup_rebalancing_enabled": True,
+		"weighted_triplet_loss_enabled": True,
 		"fairness_weights": {group: round(float(weight), 6) for group, weight in sorted(fairness_weights.items(), key=lambda item: item[0])},
 		"validation_loss": round(float(validation_loss), 6),
 		"best_validation_loss": round(float(best_validation_loss), 6),
@@ -342,9 +346,11 @@ def run_mitigation(config: MitigationConfig | None = None) -> dict[str, Any]:
 
 	last_validation_loss = float("inf")
 	epochs_completed = 0
+	last_training_loss = float("inf")
 	for epoch in range(1, cfg.epochs + 1):
 		logger.info("Mitigation epoch %s/%s started", epoch, cfg.epochs)
 		train_loss = run_mitigation_epoch(model, loss_fn, optimizer, train_loader, device)
+		last_training_loss = float(train_loss)
 		validation_result = run_validation_epoch(model.embedding_model, validation_loader, device, margin=cfg.margin)
 		last_validation_loss = float(validation_result.validation_loss)
 		scheduler.step(last_validation_loss)
@@ -394,6 +400,7 @@ def run_mitigation(config: MitigationConfig | None = None) -> dict[str, Any]:
 	}
 	summary = build_training_summary(
 		epochs_completed=epochs_completed,
+		final_training_loss=last_training_loss,
 		fairness_weights=weights,
 		validation_loss=last_validation_loss,
 		checkpoint_paths=checkpoint_paths,

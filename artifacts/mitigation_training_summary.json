@@ -31,6 +31,7 @@
     "Male_60+_Light": 0.830674,
     "Male_60+_Medium": 0.487086
   },
+  "final_training_loss": 0.319137,
   "rebalancing_summary": {
     "balanced_rows": 34920,
     "balanced_subgroup_counts": {
@@ -114,5 +115,7 @@
       "Male_60+_Medium": 0.487086
     }
   },
-  "validation_loss": 0.326262
+  "subgroup_rebalancing_enabled": true,
+  "validation_loss": 0.326262,
+  "weighted_triplet_loss_enabled": true
 }
