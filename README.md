@@ -79,3 +79,20 @@ PyTorch, OpenCV, Fairlearn, NumPy, Pandas, scikit-learn, Matplotlib, Seaborn, Sc
 ## Ethical Fairness Focus
 
 The future implementation will explicitly measure false accept and false reject rates across gender, age, and skin-tone proxies, then apply mitigation techniques with documented trade-offs. The goal is to prioritize responsible deployment over raw model accuracy.
+
+## Docker Validation
+
+Use the following commands to verify the container build and runtime state:
+
+```bash
+docker-compose up -d --build
+docker ps
+docker logs fairness-audit-container
+docker-compose down
+```
+
+Expected result:
+
+- Container status: `healthy`
+
+The repository also includes a smoke validation script at [scripts/docker_smoke_test.py](scripts/docker_smoke_test.py) for direct runtime checks inside the project environment.
