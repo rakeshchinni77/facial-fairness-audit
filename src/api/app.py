@@ -1,6 +1,6 @@
-"""API application scaffold.
-
-TODO: expose serving endpoints only after the model exists.
 """
+Future API layer for model inference and fairness audit serving.
 
-from __future__ import annotations
+Current project scope focuses on training, auditing,
+mitigation, evaluation, and reporting.
+"""
