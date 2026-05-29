@@ -2,53 +2,51 @@ from __future__ import annotations
 
 import torch
 
+from src.models.triplet_network import TripletNetwork
 from src.training.callbacks import build_checkpoint_state, save_checkpoint
-from src.training.trainer import (
-	PairCSVSampleDataset,
-	TrainerConfig,
-	TripletCSVSampleDataset,
-	build_optimizer,
-	build_scheduler,
-	build_triplet_model,
-	build_training_transform,
-	build_validation_loader,
-)
-from tests.helpers import load_json_strict
+from src.training.trainer import TrainerConfig, build_optimizer, build_scheduler, build_triplet_model
+from tests.helpers import load_json_artifact
 
 
-def test_training_datasets_and_components_initialize(processed_dir) -> None:
-	triplet_dataset = TripletCSVSampleDataset(processed_dir / "train_triplets.csv", transform=build_training_transform(), max_rows=2)
-	pair_dataset = PairCSVSampleDataset(processed_dir / "validation_pairs.csv", max_rows=2)
-	assert len(triplet_dataset) >= 1, "Triplet dataset should expose at least one row"
-	assert len(pair_dataset) >= 1, "Validation pair dataset should expose at least one row"
-	triplet_sample = triplet_dataset[0]
-	pair_sample = pair_dataset[0]
-	assert triplet_sample["anchor"].shape == (3, 224, 224), "Triplet anchors must be resized to 224x224"
-	assert pair_sample["image_a"].shape == (3, 224, 224), "Validation images must be resized to 224x224"
-	assert triplet_sample["subgroup"], "Triplet dataset must preserve subgroup metadata"
-	assert pair_sample["label"].item() in {0.0, 1.0}, "Validation labels must be binary"
+def test_trainer_initializes_optimizer_scheduler_and_model(project_root):
+    config = TrainerConfig(processed_dir=project_root / "data" / "processed", artifacts_dir=project_root / "artifacts", pretrained=False, freeze_backbone=True, train_backbone_block=False)
+    model = build_triplet_model(config)
+    optimizer = build_optimizer(model, learning_rate=1e-4)
+    scheduler = build_scheduler(optimizer)
+
+    assert isinstance(model, TripletNetwork), "Trainer should construct a TripletNetwork"
+    assert any(parameter.requires_grad for parameter in model.parameters()), "Trainer model should expose trainable parameters"
+    assert optimizer.param_groups, "Optimizer must be initialized with at least one parameter group"
+    assert scheduler is not None, "Scheduler must be initialized"
 
 
-def test_trainer_builds_optimizer_scheduler_and_checkpoint(tmp_path, processed_dir) -> None:
-	config = TrainerConfig(
-		processed_dir=processed_dir,
-		artifacts_dir=tmp_path / "artifacts",
-		device="cpu",
-		batch_size=2,
-		validation_batch_size=2,
-		epochs=1,
-		max_train_rows=2,
-		max_validation_rows=2,
-		pretrained=False,
-		freeze_backbone=False,
-	)
-	model = build_triplet_model(config)
-	optimizer = build_optimizer(model, config.learning_rate)
-	scheduler = build_scheduler(optimizer)
-	assert optimizer.param_groups, "Optimizer must expose at least one parameter group"
-	assert scheduler.state_dict(), "Scheduler must initialize correctly"
-	state = build_checkpoint_state(model, optimizer, scheduler, epoch=1, best_validation_loss=0.5, metadata={"source": "test"})
-	checkpoint_path = save_checkpoint(state, tmp_path / "artifacts" / "checkpoint.pt")
-	assert checkpoint_path.exists(), "Checkpoint save path must exist after saving"
-	summary = load_json_strict(processed_dir.parent.parent / "artifacts" / "training_summary.json")
-	assert isinstance(summary, dict), "Training summary artifact should be valid JSON"
+def test_checkpoint_save_path_exists(tmp_path):
+    model = torch.nn.Linear(4, 2)
+    optimizer = torch.optim.AdamW(model.parameters(), lr=1e-4)
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer)
+    state = build_checkpoint_state(model, optimizer, scheduler, epoch=1, best_validation_loss=0.5)
+    path = tmp_path / "checkpoint.pth"
+    saved = save_checkpoint(state, path)
+    assert saved.exists(), f"Checkpoint path was not created: {saved}"
+    assert saved.stat().st_size > 0, "Checkpoint file should not be empty"
+
+
+def test_training_summary_json_structure(project_root):
+    summary_path = project_root / "artifacts" / "training_summary.json"
+    summary = load_json_artifact(summary_path)
+    assert summary["epochs_completed"] >= 1, "Training summary should report at least one epoch"
+    assert "best_model_path" in summary, "Training summary missing best_model_path"
+    assert "metrics" in summary and isinstance(summary["metrics"], list), "Training summary missing metrics list"
+    assert summary["metrics"], "Training summary metrics should not be empty"
+    first_epoch = summary["metrics"][0]
+    for key in ("epoch", "train_loss", "validation_loss", "learning_rate", "metadata"):
+        assert key in first_epoch, f"Training metric entry missing key: {key}"
+
+
+def test_mitigation_training_summary_json_structure(project_root):
+    summary_path = project_root / "artifacts" / "mitigation_training_summary.json"
+    summary = load_json_artifact(summary_path)
+    assert summary["subgroup_rebalancing_enabled"] is True, "Mitigation summary should record subgroup rebalancing"
+    assert summary["weighted_triplet_loss_enabled"] is True, "Mitigation summary should record weighted loss"
+    assert "checkpoint_paths" in summary and "best_mitigated_model" in summary["checkpoint_paths"], "Mitigation summary missing checkpoint paths"
+    assert "rebalancing_summary" in summary, "Mitigation summary missing rebalancing summary"

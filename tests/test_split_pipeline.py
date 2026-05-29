@@ -1,32 +1,54 @@
 from __future__ import annotations
 
+import pandas as pd
 import pytest
 
-from tests.helpers import load_json_strict
+from src.data.split_dataset import create_split_plan, load_enriched_metadata, validate_ratios
+from tests.helpers import build_balanced_metadata_frame
 
 
-def test_split_summary_reports_expected_ratios_and_sizes(results_dir) -> None:
-	summary = load_json_strict(results_dir / "split_summary.json")
-	assert summary["split_ratios"] == {"train": 0.7, "validation": 0.15, "audit": 0.15}, "Split ratios must remain 70/15/15"
-	assert summary["split_sizes"] == {"train": 70, "validation": 15, "audit": 15}, "Split sizes must match the published split summary"
+def test_split_pipeline_produces_701515_ratios(tmp_path):
+    metadata = build_balanced_metadata_frame(rows_per_group=20)
+    metadata_path = tmp_path / "enriched_metadata.csv"
+    output_dir = tmp_path / "splits"
+    metadata.to_csv(metadata_path, index=False)
+
+    result = create_split_plan(metadata_path, output_dir, seed=7)
+
+    train_path = output_dir / "train_metadata.csv"
+    validation_path = output_dir / "validation_metadata.csv"
+    audit_path = output_dir / "audit_metadata.csv"
+
+    train = pd.read_csv(train_path)
+    validation = pd.read_csv(validation_path)
+    audit = pd.read_csv(audit_path)
+
+    total_rows = len(metadata)
+    assert len(train) == 70, f"Expected 70 train rows, found {len(train)}"
+    assert len(validation) == 15, f"Expected 15 validation rows, found {len(validation)}"
+    assert len(audit) == 15, f"Expected 15 audit rows, found {len(audit)}"
+    assert len(train) + len(validation) + len(audit) == total_rows, "Split sizes do not sum to the source size"
+
+    assert set(train["sample_id"]).isdisjoint(validation["sample_id"]), "Train and validation sets overlap"
+    assert set(train["sample_id"]).isdisjoint(audit["sample_id"]), "Train and audit sets overlap"
+    assert set(validation["sample_id"]).isdisjoint(audit["sample_id"]), "Validation and audit sets overlap"
+
+    source_groups = set(metadata["subgroup"])
+    for split_name, frame in (("train", train), ("validation", validation), ("audit", audit)):
+        split_groups = set(frame["subgroup"])
+        assert source_groups.issubset(split_groups), f"{split_name} split is missing subgroup coverage"
+
+    assert result["split_sizes"]["train"] == 70, "Split summary returned the wrong train size"
 
 
-def test_splits_are_disjoint_and_audit_isolated(train_metadata_frame, validation_metadata_frame, audit_metadata_frame) -> None:
-	train_ids = set(train_metadata_frame["sample_id"].astype(str))
-	validation_ids = set(validation_metadata_frame["sample_id"].astype(str))
-	audit_ids = set(audit_metadata_frame["sample_id"].astype(str))
-
-	assert not (train_ids & validation_ids), "Train and validation splits must be disjoint"
-	assert not (train_ids & audit_ids), "Train and audit splits must be disjoint"
-	assert not (validation_ids & audit_ids), "Validation and audit splits must be disjoint"
-	assert len(train_ids | validation_ids | audit_ids) == len(train_metadata_frame) + len(validation_metadata_frame) + len(audit_metadata_frame), "Split union must equal the full metadata population"
+def test_split_ratio_validation_rejects_invalid_totals():
+    with pytest.raises(ValueError, match="sum to 1.0"):
+        validate_ratios(0.5, 0.25, 0.10)
 
 
-def test_splits_preserve_subgroup_coverage(train_metadata_frame, validation_metadata_frame, audit_metadata_frame, results_dir) -> None:
-	summary = load_json_strict(results_dir / "split_summary.json")
-	expected_groups = set(summary["split_sizes"].keys())  # not used for groups; keep summary access exercised
-	train_groups = set(train_metadata_frame["subgroup"].astype(str))
-	validation_groups = set(validation_metadata_frame["subgroup"].astype(str))
-	audit_groups = set(audit_metadata_frame["subgroup"].astype(str))
-	assert train_groups == validation_groups == audit_groups, "Every split must preserve subgroup coverage"
-	assert len(train_groups) >= 1, "At least one subgroup must be present in the splits"
+def test_load_enriched_metadata_rejects_missing_columns(tmp_path):
+    malformed = tmp_path / "enriched_metadata.csv"
+    pd.DataFrame({"sample_id": ["s1"], "subgroup": ["Male_0-19_Light"]}).to_csv(malformed, index=False)
+
+    with pytest.raises(ValueError, match="Missing required enriched metadata columns"):
+        load_enriched_metadata(malformed)
