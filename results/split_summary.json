@@ -1,144 +1,84 @@
 {
-  "random_seed": 42,
+  "random_seed": 7,
   "split_ratios": {
     "train": 0.7,
     "validation": 0.15,
     "audit": 0.15
   },
   "split_sizes": {
-    "train": 7000,
-    "validation": 1500,
-    "audit": 1500
+    "train": 70,
+    "validation": 15,
+    "audit": 15
   },
   "subgroup_distributions": {
     "train": {
-      "Female_0-19_Dark": 157,
-      "Female_0-19_Light": 235,
-      "Female_0-19_Medium": 461,
-      "Female_20-39_Dark": 251,
-      "Female_20-39_Light": 716,
-      "Female_20-39_Medium": 835,
-      "Female_40-59_Dark": 51,
-      "Female_40-59_Light": 97,
-      "Female_40-59_Medium": 189,
-      "Female_60+_Dark": 42,
-      "Female_60+_Light": 74,
-      "Female_60+_Medium": 147,
-      "Male_0-19_Dark": 168,
-      "Male_0-19_Light": 270,
-      "Male_0-19_Medium": 475,
-      "Male_20-39_Dark": 223,
-      "Male_20-39_Light": 594,
-      "Male_20-39_Medium": 971,
-      "Male_40-59_Dark": 61,
-      "Male_40-59_Light": 175,
-      "Male_40-59_Medium": 332,
-      "Male_60+_Dark": 39,
-      "Male_60+_Light": 162,
-      "Male_60+_Medium": 275
+      "Female_0-19_Dark": 14,
+      "Female_20-39_Light": 14,
+      "Male_0-19_Light": 14,
+      "Male_20-39_Medium": 14,
+      "Male_40-59_Dark": 14
     },
     "validation": {
-      "Female_0-19_Dark": 34,
-      "Female_0-19_Light": 50,
-      "Female_0-19_Medium": 99,
-      "Female_20-39_Dark": 54,
-      "Female_20-39_Light": 153,
-      "Female_20-39_Medium": 179,
-      "Female_40-59_Dark": 11,
-      "Female_40-59_Light": 21,
-      "Female_40-59_Medium": 40,
-      "Female_60+_Dark": 9,
-      "Female_60+_Light": 15,
-      "Female_60+_Medium": 32,
-      "Male_0-19_Dark": 36,
-      "Male_0-19_Light": 58,
-      "Male_0-19_Medium": 102,
-      "Male_20-39_Dark": 48,
-      "Male_20-39_Light": 127,
-      "Male_20-39_Medium": 208,
-      "Male_40-59_Dark": 13,
-      "Male_40-59_Light": 38,
-      "Male_40-59_Medium": 71,
-      "Male_60+_Dark": 9,
-      "Male_60+_Light": 34,
-      "Male_60+_Medium": 59
+      "Female_0-19_Dark": 3,
+      "Female_20-39_Light": 3,
+      "Male_0-19_Light": 3,
+      "Male_20-39_Medium": 3,
+      "Male_40-59_Dark": 3
     },
     "audit": {
-      "Female_0-19_Dark": 33,
-      "Female_0-19_Light": 51,
-      "Female_0-19_Medium": 98,
-      "Female_20-39_Dark": 54,
-      "Female_20-39_Light": 154,
-      "Female_20-39_Medium": 179,
-      "Female_40-59_Dark": 11,
-      "Female_40-59_Light": 21,
-      "Female_40-59_Medium": 41,
-      "Female_60+_Dark": 9,
-      "Female_60+_Light": 16,
-      "Female_60+_Medium": 31,
-      "Male_0-19_Dark": 36,
-      "Male_0-19_Light": 58,
-      "Male_0-19_Medium": 102,
-      "Male_20-39_Dark": 47,
-      "Male_20-39_Light": 127,
-      "Male_20-39_Medium": 208,
-      "Male_40-59_Dark": 13,
-      "Male_40-59_Light": 37,
-      "Male_40-59_Medium": 72,
-      "Male_60+_Dark": 8,
-      "Male_60+_Light": 35,
-      "Male_60+_Medium": 59
+      "Female_0-19_Dark": 3,
+      "Female_20-39_Light": 3,
+      "Male_0-19_Light": 3,
+      "Male_20-39_Medium": 3,
+      "Male_40-59_Dark": 3
     }
   },
   "gender_distributions": {
     "train": {
-      "Female": 3255,
-      "Male": 3745
+      "Female": 28,
+      "Male": 42
     },
     "validation": {
-      "Female": 697,
-      "Male": 803
+      "Female": 6,
+      "Male": 9
     },
     "audit": {
-      "Female": 698,
-      "Male": 802
+      "Female": 6,
+      "Male": 9
     }
   },
   "age_distributions": {
     "train": {
-      "0-19": 1766,
-      "20-39": 3590,
-      "40-59": 905,
-      "60+": 739
+      "0-19": 28,
+      "20-39": 28,
+      "40-59": 14
     },
     "validation": {
-      "0-19": 379,
-      "20-39": 769,
-      "40-59": 194,
-      "60+": 158
+      "0-19": 6,
+      "20-39": 6,
+      "40-59": 3
     },
     "audit": {
-      "0-19": 378,
-      "20-39": 769,
-      "40-59": 195,
-      "60+": 158
+      "0-19": 6,
+      "20-39": 6,
+      "40-59": 3
     }
   },
   "skin_tone_distributions": {
     "train": {
-      "Dark": 992,
-      "Light": 2323,
-      "Medium": 3685
+      "Dark": 28,
+      "Light": 28,
+      "Medium": 14
     },
     "validation": {
-      "Dark": 214,
-      "Light": 496,
-      "Medium": 790
+      "Dark": 6,
+      "Light": 6,
+      "Medium": 3
     },
     "audit": {
-      "Dark": 211,
-      "Light": 499,
-      "Medium": 790
+      "Dark": 6,
+      "Light": 6,
+      "Medium": 3
     }
   }
 }
