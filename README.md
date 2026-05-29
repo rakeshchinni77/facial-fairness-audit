@@ -356,10 +356,8 @@ The suite covers pipeline components, evaluation and visualization sanity checks
 
 ## Author
 
-Rakesh Chinni — B.Tech CSE-AIML
+Chinni Rakesh — B.Tech CSE-AIML
 
 Responsible AI / ML Engineering Project
 
 ---
-
-If you want, I can commit this README and run a quick link-check to confirm file references render correctly on GitHub.
