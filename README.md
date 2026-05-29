@@ -110,15 +110,17 @@ Dataset → Preprocessing → Pair/Triplet Generation → ResNet18 → 128-D Emb
 
 ```mermaid
 flowchart LR
-	A[Raw FairFace images + metadata] --> B[Preprocessing]
-	B --> C[Pair / Triplet generation]
-	C --> D[ResNet18 backbone]
-	D --> E[128-D embedding + L2 norm]
-	E --> F[Triplet loss training]
-	F --> G[Threshold selection & ROC analysis]
-	G --> H[Fairness audit (subgroup & cross-group)]
-	H --> I[Mitigation: balanced sampling + weighted loss]
-	I --> J[Mitigated re-audit & visualization]
+
+	A[Dataset] --> B[Preprocessing]
+	B --> C[Pair and Triplet Generation]
+	C --> D[ResNet18 Backbone]
+	D --> E[128D Embeddings]
+	E --> F[Triplet Loss Training]
+	F --> G[Threshold Selection]
+	G --> H[Fairness Audit]
+	H --> I[Bias Mitigation]
+	I --> J[Mitigated Re Audit]
+	J --> K[Visualization and Reporting]
 ```
 
 ## ⚖️ Fairness methodology
