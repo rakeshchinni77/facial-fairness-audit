@@ -1,98 +1,274 @@
-# facial-fairness-audit
+# Facial Fairness Audit System
 
-## Project Overview
+Responsible AI • Fairness Auditing • Face Verification • Bias Mitigation
 
-`facial-fairness-audit` is a production-oriented foundation for building and auditing a facial verification system through the lens of algorithmic fairness. The project will combine metric learning, disaggregated evaluation, and mitigation workflows to support responsible AI delivery.
+This project implements a reproducible, end-to-end fairness audit for face verification systems. It includes dataset preparation, metric-learning training (ResNet18 + 128-D embeddings), operating-point selection, disaggregated audits across intersectional demographics, a simple mitigation stage, and re-evaluation with publication-quality visualizations.
 
-## Responsible AI Motivation
+Keywords: Responsible AI · Fairness Auditing · Face Verification · Bias Mitigation · Deep Learning
 
-Facial verification systems can create unequal outcomes across demographic groups if they are trained or evaluated on imbalanced data. This repository is being structured to support reproducible fairness audits, transparent reporting, and future mitigation work before any high-stakes deployment is considered.
+## Project highlights
 
-## Architecture Overview
+- ✔ End-to-end fairness audit pipeline
+- ✔ FairFace demographic analysis
+- ✔ ResNet18 + Triplet Loss (128-D embeddings)
+- ✔ Bias mitigation (balanced sampling + weighted triplet loss)
+- ✔ Cross-group fairness evaluation (pairwise deltas)
+- ✔ Dockerized execution (container + smoke test)
+- ✔ Automated testing (27 pytest tests)
+- ✔ Publication-quality visualizations (8 plots)
 
-The repository follows a modular `src/` layout with separate packages for data preparation, model components, training, audit, mitigation, evaluation, utilities, and API scaffolding. Containerization is handled at the repository root with Docker and Docker Compose.
+## Technology stack
 
-## Folder Structure Summary
+- Python
+- PyTorch
+- Torchvision
+- Scikit-learn
+- Pandas
+- NumPy
+- Docker / Docker Compose
+- Matplotlib / Seaborn
+- FairFace dataset
 
-- `configs/`: YAML configuration placeholders for project, model, training, audit, and mitigation settings.
-- `data/`: raw, processed, interim, and audit data locations.
-- `notebooks/`: exploratory and analysis notebooks.
-- `src/`: implementation modules organized by responsibility.
-- `artifacts/`: model outputs, checkpoints, embeddings, and plots.
-- `results/`: fairness audit outputs and analysis artifacts.
-- `submission/`: final reporting deliverables.
-- `tests/`: pipeline and component test placeholders.
-- `scripts/`: shell entrypoints for later phase execution.
+---
 
-## Planned Phases
+## Table of contents
 
-1. Project planning and architecture
-2. Repository foundation and environment setup
-3. Dataset acquisition and preprocessing
-4. Demographic grouping and splitting strategy
-5. Pair generation and metric learning model development
-6. Training, validation, and threshold selection
-7. Initial fairness audit and bias analysis
-8. Mitigation, re-training, and re-audit
-9. Trade-off analysis, memo writing, and final packaging
+- [Project overview](#project-overview)
+- [Problem statement](#problem-statement)
+- [Project objectives](#project-objectives)
+- [Dataset](#dataset)
+- [System architecture](#system-architecture)
+- [Fairness methodology](#fairness-methodology)
+- [Model architecture](#model-architecture)
+- [Bias mitigation strategy](#bias-mitigation-strategy)
+- [Results](#results)
+- [Visualizations](#visualizations)
+- [Key findings](#key-findings)
+- [Ethical considerations](#ethical-considerations)
+- [Deployment recommendation](#deployment-recommendation)
+- [Repository structure](#repository-structure)
+- [Docker setup](#docker-setup)
+- [Testing](#testing)
+- [Project outputs](#project-outputs)
+- [Future work](#future-work)
+- [Author](#author)
 
-## Setup Instructions Placeholder
+---
 
-1. Create and activate a Python virtual environment.
-2. Install dependencies from `requirements.txt`.
-3. Build the container with Docker Compose.
-4. Run the pipeline entrypoint from `main.py` once later phases are implemented.
+## Project overview
 
-## Testing and Validation
+Facial recognition and verification systems can exhibit demographic disparities that produce unequal false acceptance or false rejection rates across gender, age and skin-tone groups. This project builds an end-to-end audit pipeline to quantify these disparities, apply a targeted mitigation strategy, and re-evaluate fairness and utility using real artifacts produced by the pipeline.
 
-The repository now includes a pytest-based validation layer that checks the data pipeline, preprocessing, demographic mappings, split integrity, pair and triplet generation, model wiring, triplet losses, training utilities, threshold analysis, audit outputs, mitigation artifacts, visualizations, JSON validity, and an end-to-end CPU smoke test.
+Scope: per-demographic and intersectional audits across Gender, Age, and Skin Tone.
 
-Run the full suite locally:
+## Problem statement
 
-```bash
-python -m pytest
+Biometric systems impact access and security. When error rates vary across demographics, harms include:
+
+- Unequal rejection rates (legitimate users denied access)
+- Unequal acceptance rates (higher false acceptance for some groups)
+- Systemic demographic bias that compounds downstream decisions
+
+The project quantifies these harms and produces actionable mitigation recommendations.
+
+## Project objectives
+
+- Train a face verification model
+- Measure demographic performance
+- Identify disparities
+- Mitigate unfairness
+- Produce deployment recommendations
+
+## Dataset
+
+Dataset: FairFace (face images labeled with age, gender, race/skin tone). The pipeline uses demographic metadata (age, gender, race) to build subgroup labels and intersectional slices (e.g., `Female_20-39_Dark`). Subgroups are used for both within-group and cross-group pairwise evaluation.
+
+Metadata used: `age`, `gender`, `race`.
+
+## System architecture
+
+Dataset → Preprocessing → Pair/Triplet Generation → ResNet18 → 128-D Embeddings → Triplet Loss → Threshold Selection → Fairness Audit → Mitigation → Re-Audit
+
+```mermaid
+flowchart LR
+	A[Raw FairFace images + metadata] --> B[Preprocessing]
+	B --> C[Pair / Triplet generation]
+	C --> D[ResNet18 backbone]
+	D --> E[128-D embedding + L2 norm]
+	E --> F[Triplet loss training]
+	F --> G[Threshold selection & ROC analysis]
+	G --> H[Fairness audit (subgroup & cross-group)]
+	H --> I[Mitigation: balanced sampling + weighted loss]
+	I --> J[Mitigated re-audit & visualization]
 ```
 
-Run the smoke test only:
+## ⚖️ Fairness methodology
 
-```bash
-python -m pytest tests/test_end_to_end_pipeline.py -q
+Demographic groups audited:
+
+- Gender: Male, Female
+- Age: 0-19, 20-39, 40-59, 60+
+- Skin Tone (proxy): Light, Medium, Dark
+
+Metrics:
+
+- FAR (False Acceptance Rate)
+- FRR (False Rejection Rate)
+- ROC AUC
+- Threshold analysis
+- Cross-group evaluation (pairwise deltas)
+
+## Model architecture
+
+- ResNet18 backbone (torchvision)
+- Embedding layer: 128-D, L2-normalized
+- Training objective: Triplet-loss (mitigation uses a weighted variant)
+
+## 🛡️ Bias mitigation strategy
+
+Approach used in this study:
+
+- Balanced sampling: oversample underrepresented slices during mitigation training.
+- Weighted triplet loss: give higher training weight to triplets containing under-served subgroups.
+
+Rationale: simple, interpretable interventions that focus optimization on under-served slices while maintaining reproducibility.
+
+## 📊 Results
+
+All numeric values below are read directly from the pipeline artifacts under `results/` (see: [results/threshold_analysis.json](results/threshold_analysis.json), [results/fairness_summary.json](results/fairness_summary.json), [results/fairness_comparison.json](results/fairness_comparison.json), [results/overall_metrics.json](results/overall_metrics.json), [results/analysis.json](results/analysis.json)).
+
+### Performance
+
+| Metric                 |      Initial |    Mitigated |
+| ---------------------- | -----------: | -----------: |
+| Accuracy               |      0.52341 |      0.50602 |
+| FAR                    |     0.324565 |      0.51939 |
+| FRR                    |     0.628622 |      0.46857 |
+| Threshold (validation) | 0.3687057197 | 0.3687057197 |
+| ROC AUC (validation)   |      0.53499 |      0.53499 |
+| Validation pairs       |         4476 |         4476 |
+
+### Fairness summary
+
+| Metric                                   | Value                                                        |
+| ---------------------------------------- | ------------------------------------------------------------ |
+| Fairness risk level                      | HIGH                                                         |
+| Average disparity reduction (mitigation) | 0.10475                                                      |
+| Best improved subgroup                   | Female_40-59_Light                                           |
+| Worst subgroup (FRR)                     | Male_0-19_Light — FRR 0.717647 (support 85)                  |
+| Worst cross-group pairing                | Female_20-39_Dark**vs**Male_40-59_Dark — FAR 1.0 (support 1) |
+| Accuracy change (mitigated - initial)    | -0.01739                                                     |
+| FAR change                               | +0.19483                                                     |
+| FRR change                               | -0.16005                                                     |
+
+Notes: The ROC AUC near 0.535 and the high FRR indicate weak match/non-match separation at the chosen operating point. Several extreme cross-group values are associated with very low support and should be interpreted cautiously.
+
+## 📈 Visualizations
+
+Publication-ready figures (generated by the pipeline) are available under `artifacts/plots/`. Thumbnails are embedded here for convenience; click each image to open the full-resolution file.
+
+<details>
+<summary>ROC & DET</summary>
+
+[ROC Curve](artifacts/plots/roc_curve_publication.png)
+
+![ROC Curve](artifacts/plots/roc_curve_publication.png){width=600}
+
+![DET Curve](artifacts/plots/det_curve_publication.png){width=600}
+
+</details>
+
+<details>
+<summary>Fairness charts & dashboard</summary>
+
+![Fairness heatmap](artifacts/plots/fairness_heatmap.png){width=600}
+
+![Subgroup FAR](artifacts/plots/subgroup_far_chart.png){width=600}
+
+![Subgroup FRR](artifacts/plots/subgroup_frr_chart.png){width=600}
+
+![Disparity plot](artifacts/plots/disparity_gap_plot.png){width=600}
+
+![Mitigation comparison](artifacts/plots/mitigation_comparison.png){width=600}
+
+![Dashboard](artifacts/plots/fairness_dashboard.png){width=600}
+
+</details>
+
+## Key findings
+
+- The mitigation reduced FRR (improving acceptance for some groups) but increased FAR, producing a clear security vs accessibility trade-off.
+- The worst subgroup FRR (Male_0-19_Light = 0.71765) requires focused remediation.
+- Cross-group instability and low-support pairings inflate some disparity estimates; additional data collection is needed for robust conclusions.
+
+## Ethical considerations
+
+- This repository is intended for research and audit. The pipeline reports a **HIGH** fairness risk and explicitly recommends against high-stakes deployment without further work.
+- Suggested safeguards: human-in-the-loop decisions for critical flows, strict monitoring, transparent reporting, and public accountability for model updates.
+
+## Deployment recommendation
+
+The audit demonstrates concrete fairness and utility limitations that must be addressed before any high-stakes deployment. In particular, elevated FRR and large FRR gaps across subgroups indicate the system would likely deny legitimate access to certain demographic groups at disproportionate rates. Additionally, several cross-group pairings show unstable behavior driven by very low support counts, which undermines the reliability of pairwise fairness estimates.
+
+Before production use, the system requires: targeted data collection for low-support slices, stronger calibration or per-group score adjustment, and a clear human-in-the-loop policy for edge cases. Monitoring and periodic re-audits should be integrated into any deployment pipeline to detect regressions and distributional shifts.
+
+Not recommended for high-stakes deployment without additional fairness validation.
+
+## Repository structure (simplified)
+
+```
+facial-fairness-audit/
+├─ src/
+├─ artifacts/
+│  └─ plots/
+├─ results/
+├─ tests/
+├─ notebooks/
+├─ submission/
+├─ scripts/
+└─ README.md
 ```
 
-Validate inside Docker:
+## Docker setup
 
-```bash
-docker compose run --rm fairness-audit pytest -q
-```
-
-Coverage overview:
-
-- Data and preprocessing checks ensure metadata integrity, subgroup enrichment, RGB conversion, normalization, and augmentation stability.
-- Model checks verify the ResNet18 backbone, 128-dimensional embeddings, L2 normalization, and triplet-network forwarding.
-- Audit checks verify threshold outputs, initial audit metrics, fairness summaries, mitigation reports, and visualization artifacts.
-- Quality checks validate all `results/*.json` files and confirm that the PDF memo and plot outputs remain present and non-empty.
-
-## Tech Stack
-
-PyTorch, OpenCV, Fairlearn, NumPy, Pandas, scikit-learn, Matplotlib, Seaborn, SciPy, PyYAML, Jupyter, pytest, Docker, and Docker Compose.
-
-## Ethical Fairness Focus
-
-The future implementation will explicitly measure false accept and false reject rates across gender, age, and skin-tone proxies, then apply mitigation techniques with documented trade-offs. The goal is to prioritize responsible deployment over raw model accuracy.
-
-## Docker Validation
-
-Use the following commands to verify the container build and runtime state:
+Build and run with Docker Compose (requires Docker on host):
 
 ```bash
 docker-compose up -d --build
 docker ps
-docker logs fairness-audit-container
 docker-compose down
 ```
 
-Expected result:
+The repository includes `scripts/docker_smoke_test.py` and a record of the verification outcome at `results/docker_verification.json` which documents host-side smoke checks and notes about Docker availability during authoring.
 
-- Container status: `healthy`
+## Testing
 
-The repository also includes a smoke validation script at [scripts/docker_smoke_test.py](scripts/docker_smoke_test.py) for direct runtime checks inside the project environment.
+- There are **27** automated tests under `tests/`. Run them with:
+
+```bash
+pytest -v
+```
+
+The suite covers pipeline components, evaluation and visualization sanity checks, and end-to-end smoke behaviors.
+
+## Project outputs
+
+- `results/` — JSON summaries (thresholds, audits, comparisons, analysis)
+- `artifacts/` — checkpoints and publication plots
+- `submission/` — deployment memo and executive summary (PDF)
+
+## Future work
+
+- Collect targeted data for under-supported intersectional slices
+- Calibrate scores (per-group and post-hoc) and explore alternative fairness-aware objectives
+- Stronger cross-validation and larger held-out demographic sets for robust claims
+
+## Author
+
+Rakesh Chinni — B.Tech CSE-AIML
+
+Responsible AI / ML Engineering Project
+
+---
+
+If you want, I can commit this README and run a quick link-check to confirm file references render correctly on GitHub.
