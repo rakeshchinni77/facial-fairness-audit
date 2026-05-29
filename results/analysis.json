@@ -11,13 +11,15 @@
   ],
   "fairness_risk_level": "HIGH",
   "hypothesized_causes": {
-    "data_level": [
+    "data_level": "Some demographic slices have much smaller support than others, including groups such as Male_60+_Dark, Female_40-59_Dark, Female_60+_Dark. The worst FRR subgroup (Male_0-19_Light) still shows only 85 paired samples, which can make its estimate less stable than dense groups. The audit distribution is uneven across age and skin-tone combinations, which can amplify representation gaps for older and darker-skinned groups. Mixed demographic pairs with very small support counts indicate sparse coverage for some intersectional combinations.",
+    "data_level_details": [
       "Some demographic slices have much smaller support than others, including groups such as Male_60+_Dark, Female_40-59_Dark, Female_60+_Dark.",
       "The worst FRR subgroup (Male_0-19_Light) still shows only 85 paired samples, which can make its estimate less stable than dense groups.",
       "The audit distribution is uneven across age and skin-tone combinations, which can amplify representation gaps for older and darker-skinned groups.",
       "Mixed demographic pairs with very small support counts indicate sparse coverage for some intersectional combinations."
     ],
-    "model_level": [
+    "model_level": "The existing ResNet18 embedding stack may not separate demographic manifolds equally well, which is consistent with high subgroup FRR variance. The overall FRR remains elevated at 0.628622, suggesting weak match/non-match separation at the current operating point. The worst cross-group pairing (Female_20-39_Dark__vs__Male_40-59_Dark) reaches FAR=1.000000, which is consistent with unstable decision boundaries across intersections. The largest FRR gap of 0.405147 suggests threshold sensitivity across demographic slices rather than uniformly calibrated scores. ImageNet-style pretraining can leave residual feature bias if the embedding head is not sufficiently adapted to the face-verification domain. The high rejection rate for some groups is consistent with underfitting or demographic feature entanglement in the learned embedding space.",
+    "model_level_details": [
       "The existing ResNet18 embedding stack may not separate demographic manifolds equally well, which is consistent with high subgroup FRR variance.",
       "The overall FRR remains elevated at 0.628622, suggesting weak match/non-match separation at the current operating point.",
       "The worst cross-group pairing (Female_20-39_Dark__vs__Male_40-59_Dark) reaches FAR=1.000000, which is consistent with unstable decision boundaries across intersections.",

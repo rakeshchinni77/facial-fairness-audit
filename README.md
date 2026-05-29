@@ -32,7 +32,7 @@ Keywords: Responsible AI · Fairness Auditing · Face Verification · Bias Mitig
 
 ## Dashboard preview
 
-![Fairness Dashboard](https://chatgpt.com/c/artifacts/plots/fairness_dashboard.png)
+![Fairness Dashboard](artifacts/plots/fairness_dashboard.png)
 
 This dashboard summarizes subgroup performance, disparity analysis, and mitigation outcomes.
 

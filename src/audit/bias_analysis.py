@@ -263,6 +263,12 @@ def _ethical_implications(fairness_summary: dict[str, Any], cross_group_metrics:
     ]
 
 
+def _summarize_causes(causes: list[str]) -> str:
+    """Condense a list of cause statements into a contract-friendly summary string."""
+
+    return " ".join(causes).strip()
+
+
 def build_analysis(
     initial_audit: dict[str, Any],
     cross_group_metrics: dict[str, Any],
@@ -290,8 +296,10 @@ def build_analysis(
         "worst_cross_group_pairing": cross_group_pair,
         "most_affected_demographics": most_affected_demographics,
         "hypothesized_causes": {
-            "data_level": _hypothesized_data_level_causes(initial_audit, fairness_summary),
-            "model_level": _hypothesized_model_level_causes(initial_audit, fairness_summary, cross_group_metrics),
+            "data_level": _summarize_causes(_hypothesized_data_level_causes(initial_audit, fairness_summary)),
+            "model_level": _summarize_causes(_hypothesized_model_level_causes(initial_audit, fairness_summary, cross_group_metrics)),
+            "data_level_details": _hypothesized_data_level_causes(initial_audit, fairness_summary),
+            "model_level_details": _hypothesized_model_level_causes(initial_audit, fairness_summary, cross_group_metrics),
         },
         "ethical_implications": _ethical_implications(fairness_summary, cross_group_metrics),
         "deployment_readiness": _deployment_recommendation(fairness_summary),
