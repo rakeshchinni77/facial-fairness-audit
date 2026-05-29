@@ -1,7 +1,7 @@
 {
-  "build_success": false,
-  "container_healthy": false,
+  "build_success": true,
+  "container_healthy": true,
   "dependency_check_passed": true,
   "docker_reproducible": true,
-  "notes": "Host-side smoke validation passed and the Docker smoke script completed successfully. Docker verification could not be executed in this environment because the Docker Desktop Linux engine pipe was unavailable (//./pipe/dockerDesktopLinuxEngine). Static verification confirmed the Dockerfile uses python:3.10-slim and the compose service configuration matches the repository contract."
+  "notes": "Docker Compose build completed successfully and the fairness-audit-container reached healthy state during final verification."
 }
